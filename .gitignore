@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables (NEVER commit these)
+.env
+.env.local
+.env.*.local
+*.env
+
+# API keys and secrets
+secrets/
+credentials/
+*.key
+*.pem
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (if using any tooling)
+node_modules/
+
+# Generated reports (user-specific data)
+KYC_Cases/
+cases/
+output/
+reports/
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp

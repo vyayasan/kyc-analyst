@@ -1,0 +1,310 @@
+EXPECTED EXCEL DASHBOARD OUTPUT - CORPORATE ONBOARDING
+Case: KYC-20260211-ONB-TECHVENTURES-001
+Generated: 11/02/2026
+Status: PROCEED - MEDIUM RISK
+
+======================================================================================
+SHEET 1: COMPANY PROFILE & VERIFICATION SUMMARY
+======================================================================================
+
+Company Registration Details:
+| FIELD | VALUE |
+|-------|-------|
+| Legal Name | TechVentures Limited |
+| Trading Name | TechVentures |
+| Registration Number | 11234567 |
+| Jurisdiction | England & Wales, UK |
+| Incorporation Date | 15/03/2015 |
+| Years Operating | 11 years |
+| Company Status | Active, Good Standing |
+| VAT Number | GB 234 5678 90 |
+| Business Activity | Software development & IT consulting |
+| Employees | 12 |
+| Registered Office | [Address verified] |
+
+Verification Results:
+| ELEMENT | STATUS | VERIFICATION |
+|---------|--------|---|
+| Company Existence | VERIFIED | Companies House confirmation |
+| Certificate of Incorporation | VERIFIED | Authentic document reviewed |
+| Articles & Memorandum | VERIFIED | Filed with Companies House |
+| Registered Office | VERIFIED | Address confirmed via council tax |
+| Business Activity | VERIFIED | Confirmed via website and client portfolio |
+| Financial Statements | VERIFIED | 2025 accounts filed, audited if required |
+| Tax Status | VERIFIED | Current with HMRC |
+| Director Register | VERIFIED | 2 directors, no disqualifications |
+| Shareholder Register | VERIFIED | Shareholding structure confirmed |
+
+Financial Profile (2025):
+| METRIC | FIGURE | ASSESSMENT |
+|--------|--------|---|
+| Revenue | £1,050,000 | Strong for SME |
+| Profit | £145,000 | Profitable (13.8% margin) |
+| Total Assets | £420,000 | Healthy asset base |
+| Liabilities | £125,000 | Manageable debt |
+| Net Worth | £295,000 | Positive equity |
+| Years Profitable | 11/11 | Consistently profitable |
+
+Business Risk Assessment:
+| FACTOR | RATING | DETAIL |
+|--------|--------|--------|
+| Industry | MEDIUM | Tech/software - standard risk |
+| Business Model | MEDIUM | B2B services - established model |
+| Financial Stability | MEDIUM | 11 years, profitable, growing |
+| Client Base | MEDIUM | 30+ corporate clients, diversified |
+| Geographic | LOW | UK-based operations |
+| **Overall Industry Risk** | **MEDIUM** | **Standard SME profile** |
+
+======================================================================================
+SHEET 2: OWNERSHIP STRUCTURE & BENEFICIAL OWNERSHIP
+======================================================================================
+
+Shareholding Structure:
+
+| SHAREHOLDER | TYPE | SHAREHOLDING | UBO STATUS |
+|---|---|---|---|
+| Sarah Johnson | Individual | 35% | **UBO - Qualifying (>25%)** |
+| Michael Chen | Individual | 35% | **UBO - Qualifying (>25%)** |
+| Investment Partner Limited | Entity | 20% | Non-qualifying (no individual >25%) |
+| **TOTAL** | | **100%** | |
+
+Beneficial Ownership Penetration Analysis:
+
+**Sarah Johnson - UBO 1**
+| Detail | Information |
+|--------|---|
+| Shareholding | 35% (Qualifying UBO, >25% threshold) |
+| Role | CEO & Director |
+| Appointed | 15/03/2015 (since incorporation) |
+| Nationality | British |
+| Age | 42 years |
+| Residential Status | UK resident |
+| UBO Verification | REQUIRED (Step 0 screening) |
+| Control | Direct shareholding and operational control as CEO |
+
+**Michael Chen - UBO 2**
+| Detail | Information |
+|--------|---|
+| Shareholding | 35% (Qualifying UBO, >25% threshold) |
+| Role | CTO & Director |
+| Appointed | 15/03/2015 (since incorporation) |
+| Nationality | British-Chinese |
+| Age | 38 years |
+| Residential Status | UK resident |
+| UBO Verification | REQUIRED (Step 0 screening) |
+| Control | Direct shareholding and operational control as CTO |
+
+**Investment Partner Limited - Non-Qualifying**
+| Detail | Information |
+|--------|---|
+| Shareholding | 20% (Non-qualifying, <25% threshold) |
+| Entity Type | Private company - employee investment scheme |
+| Beneficial Owners | 10 individual shareholders, each <5% |
+| Ultimate Control | Distributed among 10 employees |
+| No Single UBO Exceeds 25% | CONFIRMED |
+| Assessment | Transparent ownership, no concealment |
+
+**Ownership Transparency Assessment: CLEAR**
+- All shareholders disclosed
+- All beneficial owners identified
+- No complex nominee structures
+- No trust arrangements concealing ownership
+- No offshore structures
+- **Conclusion:** TRANSPARENT OWNERSHIP, LOW COMPLEXITY
+
+Directors & Officers:
+
+| OFFICER | ROLE | APPOINTED | STATUS |
+|---------|------|-----------|--------|
+| Sarah Johnson | Director (CEO) | 15/03/2015 | Active |
+| Michael Chen | Director (CTO) | 15/03/2015 | Active |
+
+**Director Verification:**
+- [✓] Sarah Johnson: No disqualifications, Companies House officer search clear
+- [✓] Michael Chen: No disqualifications, Companies House officer search clear
+- [✓] No change in directorship history noted
+- [✓] Both directors are qualifying UBOs (Sarah & Michael)
+
+Ownership Structure Diagram:
+
+```
+TechVentures Limited (100%)
+├── Sarah Johnson (35%) - CEO/Director
+├── Michael Chen (35%) - CTO/Director
+└── Investment Partner Limited (20%)
+    └── 10 Employee Shareholders (each <5%)
+```
+
+**Assessment:** CLEAR, TRANSPARENT OWNERSHIP STRUCTURE
+
+======================================================================================
+SHEET 3: DIRECTOR & UBO SCREENING RESULTS (STEP 0)
+======================================================================================
+
+Step 0 Verification Status: ALL DIRECTORS AND UBOS SCREENED
+
+Director 1: Sarah Johnson
+| SEARCH | RESULT | DETAIL |
+|--------|--------|--------|
+| Adverse Media | CLEAR | No negative coverage, 30+ years search |
+| Directorships | 1 COMPANY | Only TechVentures Limited (current directorship) |
+| PEP Status | NOT PEP | No political exposure identified |
+| Professional Background | VERIFIED | 20+ years IT industry, CTO/CEO progression |
+| Sanctions/Crime | CLEAR | No sanctions, no criminal record |
+| **Overall Assessment** | **LOW RISK** | **Clean profile, established professional** |
+
+Director 2: Michael Chen
+| SEARCH | RESULT | DETAIL |
+|--------|--------|--------|
+| Adverse Media | CLEAR | No negative coverage, no adverse findings |
+| Directorships | 1 COMPANY | Only TechVentures Limited (current directorship) |
+| PEP Status | NOT PEP | No political exposure, no family connections |
+| Professional Background | VERIFIED | 18+ years IT industry, technical specialist background |
+| Sanctions/Crime | CLEAR | No sanctions, no criminal record |
+| **Overall Assessment** | **LOW RISK** | **Clean profile, technical expert** |
+
+Company-Level Screening:
+
+| ELEMENT | SEARCH | RESULT |
+|---------|--------|--------|
+| Company Name - Adverse Media | 72+ sources | CLEAR |
+| Company Directorships - Officer Search | Companies House | Verified |
+| Company Sanctions | 12 lists | CLEAR |
+| Company Insolvencies | UK register | CLEAR |
+| Related Entities | Registry search | None identified |
+| **Company Overall** | | **CLEAR** |
+
+**UBO Screening Summary:**
+- Sarah Johnson: LOW RISK (verified professional, no adverse findings)
+- Michael Chen: LOW RISK (verified professional, no adverse findings)
+- No undisclosed individuals identified
+- No complex ownership chains
+- No beneficial owners obscured
+
+======================================================================================
+SHEET 4: CORPORATE RISK ASSESSMENT
+======================================================================================
+
+Risk Scoring (Corporate Version):
+
+| FACTOR | WEIGHT | SCORE | WEIGHTED |
+|--------|--------|-------|----------|
+| Industry Risk | 25% | 25 | 6.25 |
+| Financial Stability | 20% | 20 | 4.0 |
+| Ownership Transparency | 20% | 10 | 2.0 |
+| UBO/Director Risk | 20% | 15 | 3.0 |
+| Geographic Risk | 15% | 10 | 1.5 |
+| **TOTAL RISK SCORE** | **100%** | | **16.75 ≈ 17** |
+
+**Risk Band: MEDIUM (Risk Score 17/100 = MEDIUM, 0-20 would be LOW-MEDIUM)**
+
+Detailed Scoring:
+
+**Industry Risk (25% weight) = 25/100**
+- Tech/Software development: MEDIUM risk (not high-risk sector)
+- B2B model: Lower risk than B2C/consumer
+- Established industry: 11 years operation
+- No regulated activities: Not MSB, gambling, precious metals
+- Score: 25/100 (moderate)
+
+**Financial Stability (20% weight) = 20/100**
+- 11 years profitable: Consistent track record
+- Revenue £1m+: Healthy turnover
+- Profit margin 13.8%: Sustainable profitability
+- Asset position: Positive equity (£295k net worth)
+- Score: 20/100 (low risk financially)
+
+**Ownership Transparency (20% weight) = 10/100**
+- Clear shareholding structure: No complexity
+- No offshore entities: UK resident shareholders
+- No nominee arrangements: Direct shareholding
+- No trusts concealing ownership: Transparent
+- Score: 10/100 (very low risk)
+
+**UBO & Director Risk (20% weight) = 15/100**
+- Both directors/UBOs: Screen clean
+- No PEP status: No political exposure
+- No adverse media: No regulatory issues
+- Professional credentials: Verified background
+- Score: 15/100 (low risk)
+
+**Geographic Risk (15% weight) = 10/100**
+- UK jurisdiction: Low AML/CFT risk
+- UK residents: Both directors/UBOs UK-based
+- No international exposure: Domestic operations
+- Score: 10/100 (low risk)
+
+Risk Mitigation Factors:
+- [✓] Transparent ownership, no complexity
+- [✓] Clean financial records (11 years profitable)
+- [✓] Professional management team
+- [✓] Established client base (30+ corporations)
+- [✓] No adverse findings across all screens
+- [✓] Low-risk industry (tech/software)
+- [✓] UK-based operations
+
+Risk Escalation Factors:
+- None identified
+
+**Final Risk Rating: MEDIUM** (Score 17/100 = LOW-MEDIUM range)
+
+Monitoring Requirements:
+- Standard business account monitoring
+- Annual KYC refresh
+- Annual financial statement review
+- Quarterly transaction pattern review (standard)
+- Next review: 11/02/2027
+
+======================================================================================
+SHEET 5: DECISION & APPROVAL
+======================================================================================
+
+Step 0 Verification Summary:
+
+| VERIFICATION | STATUS | RESULT |
+|---------------|--------|--------|
+| Company verification | COMPLETE | VERIFIED against Companies House |
+| Director screening (2) | COMPLETE | All CLEAR |
+| UBO screening (2 qualifying) | COMPLETE | All CLEAR |
+| Financial statement review | COMPLETE | VERIFIED - profitable, stable |
+| Beneficial ownership penetration | COMPLETE | 2 qualifying UBOs identified, no obscuration |
+| Industry/geographic assessment | COMPLETE | MEDIUM risk, UK-based, standard sector |
+
+Decision Gate Assessment:
+
+| CRITERION | STATUS |
+|-----------|--------|
+| All company documentation verified | YES |
+| All directors screened | YES (2/2 CLEAR) |
+| All UBOs identified and screened | YES (2/2 CLEAR) |
+| Beneficial ownership penetrated to natural persons | YES |
+| No material discrepancies found | YES |
+| No escalation triggers identified | YES |
+| Regulatory requirements satisfied | YES |
+
+**DECISION: PROCEED WITH ONBOARDING**
+
+Final Determination:
+
+| ELEMENT | DETAIL |
+|---------|--------|
+| Company Status | VERIFIED - Good Standing, Active |
+| Risk Rating | MEDIUM (17/100) |
+| Escalation Required | NO |
+| EDD Required | NO |
+| Approval Authority | Analyst (MEDIUM risk approval permitted) |
+| Approval Status | APPROVED |
+| Account Opening | READY TO PROCEED |
+| Next Review | 11/02/2027 (annual) |
+
+Regulatory Compliance:
+
+- [✓] AMLD5 UBO identification requirement: MET (2 qualifying UBOs identified)
+- [✓] Beneficial ownership penetration: COMPLETE (natural persons identified)
+- [✓] Director due diligence: COMPLETE (both directors screened)
+- [✓] Business verification: COMPLETE (activity confirmed)
+- [✓] Financial stability: VERIFIED (accounts reviewed)
+- [✓] UK Money Laundering Regulations 2017: COMPLIANT
+
+**Conclusion:** TechVentures Limited presents a straightforward SME profile with clear ownership, profitable operations, and professional management. All due diligence requirements met. Recommended for approval with standard business account monitoring.
+

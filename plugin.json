@@ -1,0 +1,82 @@
+{
+  "name": "kyc-analyst",
+  "version": "2.3.0",
+  "description": "Fully interactive KYC/AML compliance automation with mandatory Step 0 independent verification (AMLD5 Article 10), guided Q&A workflows, automatic case folder creation, Excel dashboards, PDF reports, immutable audit trails, and practical copy-paste workflow templates. All 6 commands (onboard, onboard-interactive, refresh, screen, monitor, risk) with step-by-step guidance and HITL checkpoints.",
+  "author": {
+    "name": "Vyayasan",
+    "email": "contact@vyayasan.com"
+  },
+  "homepage": "https://github.com/vyayasan/kyc-analyst",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vyayasan/kyc-analyst.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "kyc",
+    "aml",
+    "compliance",
+    "onboarding",
+    "amld5",
+    "step0",
+    "independent-verification",
+    "fintech",
+    "anti-money-laundering",
+    "customer-due-diligence",
+    "due-diligence",
+    "pep",
+    "sanctions-screening"
+  ],
+  "version_history": {
+    "1.0.0": "Initial release with practical workflow templates and HITL workflows",
+    "2.0.0": "Added Step 0 mandatory verification framework",
+    "2.1.0": "Added interactive mode, Excel reports, case folder management",
+    "2.2.0": "Auto case folder creation, locked templates, comprehensive documentation",
+    "2.3.0": "Final locked version: 17 mandatory stagegates, MCP connector integration (Chrome, PDF, Excel), HITL enforcement, fpdf2/openpyxl report generation"
+  },
+  "capabilities": {
+    "commands": {
+      "onboard": "Customer onboarding with mandatory Step 0 independent verification",
+      "onboard-interactive": "Interactive dialog-based onboarding with step-by-step guidance",
+      "refresh": "Periodic customer review with independent verification",
+      "screen": "Sanctions and PEP screening with comprehensive searches",
+      "monitor": "AML transaction monitoring and reporting",
+      "risk": "Risk reassessment with updated due diligence"
+    },
+    "features": {
+      "step0Verification": "Mandatory independent verification (5 searches: Adverse Media, Directorships, PEP, Professional Background, Sanctions/Crime)",
+      "workflowTemplates": "Copy-paste templates for 5+ scenarios (Individual, HNWI, SME, Complex Corporate, Refresh)",
+      "connectorIntegration": "Tool-agnostic ~~placeholder system for cloud storage, CRM, browser, email",
+      "interactiveMode": "Step-by-step Q&A guidance for all workflows",
+      "excelReports": "Automatic creation of 4-sheet Excel dashboards",
+      "pdfReports": "17-section professional PDF reports",
+      "caseFolderManagement": "Auto-created case folders with numbered, organized substructure",
+      "lockedTemplates": "Immutable compliance templates (CASE_METADATA, STEP_0_VERIFICATION_REPORT, AUDIT_TRAIL)",
+      "auditTrail": "Auto-generated immutable chronological log for regulatory compliance",
+      "heuristicRiskScoring": "Deterministic four-factor risk scoring (Geographic 30%, Customer 35%, Product 25%, Channel 10%)",
+      "escalationRouting": "Automatic escalation for critical findings and material misrepresentations",
+      "hitlCheckpoints": "Explicit Human-in-the-Loop decision points throughout all workflows",
+      "stagegateEnforcement": "17 mandatory sequential stagegates with explicit analyst consent at each gate",
+      "mcpIntegration": "Claude in Chrome (browser), fpdf2 (PDF), openpyxl (Excel) with tool-agnostic ~~placeholder system",
+      "icijOffshoreSearch": "Search 1.5: ICIJ Offshore Leaks Database (Panama Papers, Paradise Papers, Pandora Papers)"
+    }
+  },
+  "regulatory_compliance": {
+    "AMLD5_Article_10": "Independent verification requirement implemented and enforced",
+    "UK_MLR_2017_Regulation_19": "Customer information verification using reliable sources",
+    "FCA_Guidance": "Robust Customer Due Diligence procedures with proportionate approach",
+    "Basel_III": "Risk-based due diligence implementation",
+    "FinCEN_CDD_Rule": "US Customer Due Diligence requirements",
+    "BSA_AML": "Bank Secrecy Act compliance"
+  },
+  "system_requirements": {
+    "claude_version": "Claude Code / Cowork v1.0+",
+    "browser": "Chrome with Claude Code extension (optional)",
+    "features_required": ["Web search capability", "Excel generation (openpyxl)", "PDF generation (fpdf2)", "File system access", "Python 3 runtime"]
+  },
+  "installation": {
+    "method": "Upload plugin folder to Cowork",
+    "installation_time": "< 1 minute",
+    "dependencies": "None - fully self-contained"
+  }
+}

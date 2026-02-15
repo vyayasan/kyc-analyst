@@ -1,0 +1,135 @@
+CASE AUDIT TRAIL - IMMUTABLE RECORD
+================================================================================
+Case Reference: KYC-20260211-ONB-TECHVENTURES-001
+Customer: TechVentures Limited
+Audit Trail Generated: 11 February 2026 13:20:45 UTC
+Trail Status: LOCKED & IMMUTABLE
+Retention Period: 5 years (until 11/02/2031)
+
+================================================================================
+TIMELINE OF EVENTS - CORPORATE ONBOARDING
+================================================================================
+
+EVENT 1: APPLICATION RECEIVED
+Date/Time: 08/02/2026 10:30:00 UTC
+Status: RECEIVED
+- Corporate company application submitted
+- 9 documents provided (complete package)
+- Initial review: SME profile, straightforward
+
+EVENT 2: INITIAL ASSESSMENT
+Date/Time: 08/02/2026 11:45:15 UTC
+Status: ASSESSED - STANDARD CORPORATE PATHWAY
+- Documentation complete and authentic
+- Beneficial ownership structure analyzed: 2 qualifying UBOs (Sarah Johnson, Michael Chen, each 35%)
+- Initial risk category: MEDIUM (standard SME)
+- Decision: Proceed with standard Step 0 verification (not escalated)
+
+EVENT 3: STEP 0 VERIFICATION INITIATED
+Date/Time: 08/02/2026 14:00:00 UTC
+Status: IN PROGRESS
+- Corporate verification protocol activated
+- All 5 searches queued (director and company level)
+- Expected completion: 2-3 hours
+
+EVENT 4: SEARCH 1 COMPLETED - ADVERSE MEDIA
+Date/Time: 08/02/2026 15:20:33 UTC
+Status: COMPLETE - CLEAR
+- Company name search: CLEAR
+- Both directors screened: CLEAR
+- Result: CLEAR - No adverse media
+
+EVENT 5: SEARCH 2 COMPLETED - DIRECTORSHIPS
+Date/Time: 08/02/2026 15:45:12 UTC
+Status: COMPLETE - MAPPED
+- Sarah Johnson: 1 directorship (TechVentures Ltd only)
+- Michael Chen: 1 directorship (TechVentures Ltd only)
+- No undisclosed directorships
+- Result: MAPPED - All directorships identified
+
+EVENT 6: SEARCH 3 COMPLETED - PEP STATUS
+Date/Time: 08/02/2026 16:10:28 UTC
+Status: COMPLETE - NOT PEP
+- Sarah Johnson: NOT PEP
+- Michael Chen: NOT PEP
+- Result: NOT PEP - No political exposure
+
+EVENT 7: SEARCH 4 COMPLETED - PROFESSIONAL BACKGROUND
+Date/Time: 08/02/2026 16:35:44 UTC
+Status: COMPLETE - VERIFIED
+- Sarah Johnson: 20+ years IT industry, CEO progression verified
+- Michael Chen: 18+ years technical specialist, CTO verified
+- Result: VERIFIED - Professional backgrounds confirmed
+
+EVENT 8: SEARCH 5 COMPLETED - SANCTIONS & CRIME
+Date/Time: 08/02/2026 17:05:19 UTC
+Status: COMPLETE - CLEAR
+- All 12 sanctions sources: CLEAR
+- No criminal records identified
+- Result: CLEAR - No sanctions or criminal records
+
+EVENT 9: BENEFICIAL OWNERSHIP VERIFICATION
+Date/Time: 11/02/2026 09:00:00 UTC
+Status: COMPLETE
+- Sarah Johnson: 35% shareholder, UBO verified
+- Michael Chen: 35% shareholder, UBO verified
+- Investment Partner Limited: 20%, non-qualifying (10 sub-owners, each <5%)
+- Complete penetration to natural persons: ACHIEVED
+
+EVENT 10: COMPANY VERIFICATION
+Date/Time: 11/02/2026 09:30:00 UTC
+Status: COMPLETE
+- Companies House registration: VERIFIED
+- Financial accounts 2025: VERIFIED (£1.05m revenue, profitable)
+- Business activity: VERIFIED (software development, 30+ clients)
+- Result: Company status VERIFIED
+
+EVENT 11: RISK ASSESSMENT CALCULATED
+Date/Time: 11/02/2026 10:15:30 UTC
+Status: COMPLETE
+- Industry risk: 25/100
+- Financial stability: 20/100
+- Ownership transparency: 10/100
+- UBO/director risk: 15/100
+- Geographic risk: 10/100
+- **TOTAL: 17/100 = MEDIUM (LOW-MEDIUM range)**
+
+EVENT 12: DECISION GATE PASSED
+Date/Time: 11/02/2026 10:45:00 UTC
+Status: PROCEED
+- All Step 0 searches: COMPLETE
+- All results: CLEAR/VERIFIED
+- Beneficial ownership: PENETRATED
+- No discrepancies: CONFIRMED
+- Decision: PROCEED
+
+EVENT 13: ANALYST APPROVAL
+Date/Time: 11/02/2026 11:00:00 UTC
+Status: APPROVED
+- Risk assessment reviewed: 17/100 = MEDIUM
+- Approval authority: Analyst (MEDIUM risk self-approval)
+- Decision: PROCEED WITH ONBOARDING
+- Status: APPROVED
+
+EVENT 14: AUDIT TRAIL LOCKED
+Date/Time: 11/02/2026 13:20:45 UTC
+Status: LOCKED & IMMUTABLE
+- 14 events recorded and verified
+- Cryptographic signature applied
+- Immutability enabled
+- Archive location: /Cases/2026/Corporate/SME/
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+Case Duration: 3 days 2 hours 50 minutes
+Active Processing: 2 days
+Step 0 Searches: 5/5 (100%)
+Result: ALL CLEAR/VERIFIED
+Risk Score: 17/100 (MEDIUM)
+Escalations: 0
+Status: APPROVED
+
+================================================================================
+END OF AUDIT TRAIL
+================================================================================

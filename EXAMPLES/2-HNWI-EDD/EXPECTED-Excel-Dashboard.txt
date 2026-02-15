@@ -1,0 +1,386 @@
+EXPECTED EXCEL DASHBOARD OUTPUT - HNWI ENHANCED DUE DILIGENCE
+Case: KYC-20260211-ONB-THOMPSON-001
+Generated: 11/02/2026
+Status: HIGH RISK - EDD REQUIRED - ESCALATED FOR APPROVAL
+
+======================================================================================
+SHEET 1: EXECUTIVE SUMMARY (EDD VERSION)
+======================================================================================
+
+Header Section:
+| FIELD | VALUE |
+|-------|-------|
+| Case ID | KYC-20260211-ONB-THOMPSON-001 |
+| Customer Name | Alexander Thompson |
+| Date of Birth | 22/07/1965 (Age: 60 years) |
+| Nationality | British (Primary), UAE Resident |
+| Country of Residence | UAE (Dubai) |
+| Application Date | 05/02/2026 |
+| Onboarding Status | ESCALATED FOR APPROVAL |
+| Risk Rating | HIGH |
+| Risk Score | 62/100 |
+| EDD Level | ENHANCED - Requires Senior Management Approval |
+| Decision Status | PENDING MANAGER/MLRO APPROVAL |
+| Next Steps | Await senior management decision |
+
+Customer Profile Section:
+| PROFILE ELEMENT | DETAIL |
+|-----------------|--------|
+| Full Name | Alexander Thompson |
+| Current Address | Jumeirah Heights, Dubai, UAE |
+| Primary Occupation | Entrepreneur / Business Owner |
+| Active Companies | 3 operating directorships |
+| Estimated Net Worth | £18-22 million |
+| Expected Activity | Large international transfers, investment transactions |
+| Account Type | Wealth Management / International Banking |
+| Relationship Purpose | International investment and business banking |
+| Marital Status | Married (Spouse: Victoria Thompson) |
+| Business Experience | 25+ years (since 2000) |
+
+Verification Results Section:
+| VERIFICATION ELEMENT | STATUS | DETAIL |
+|----------------------|--------|--------|
+| Identity | VERIFIED | UK Passport PP789456123, expires 22/07/2032 |
+| Address (UAE) | VERIFIED | Utility bill from Jumeirah Heights, Dubai |
+| Residence Status | VERIFIED | UAE residency visa valid until 2027 |
+| Business Interests | VERIFIED & MAPPED | 3 operating companies identified |
+| Wealth Source | DOCUMENTED | Business sales (2019), business profits, investments |
+| Beneficial Ownership | VERIFIED | Complete ownership structure identified |
+| Professional Background | VERIFIED | 25+ years business experience documented |
+| Family/PEP Status | CHECKED | No direct PEP; cousin is legal professional (not political) |
+
+Step 0 Verification Results (Summary):
+| SEARCH | RESULT | FINDINGS | EDD IMPACT |
+|--------|--------|----------|-----------|
+| 1. Adverse Media | CLEAR | No adverse findings (comprehensive international search) | No red flags |
+| 2. Directorships | MAPPED | 3 active UK/UAE directorships, all disclosed | Material number of directorships |
+| 3. PEP Status | NOT PEP (PRIMARY) | Customer not PEP; family connections checked - no political exposure | Low immediate PEP risk |
+| 4. Professional Background | VERIFIED | 25+ years business track record, documented | Strong business credentials |
+| 5. Sanctions/Crime | CLEAR | No sanctions, no criminal records (comprehensive screening) | Clean sanctions profile |
+
+Enhanced Due Diligence Requirement:
+| EDD FACTOR | STATUS | DETAIL |
+|------------|--------|--------|
+| HNWI Classification | YES | Net worth £18-22m triggers mandatory EDD |
+| Complex Business Structure | YES | Multiple directorships, international operations |
+| International Exposure | YES | UK, UAE, Multi-jurisdictional operations |
+| Source of Wealth Clarity | DOCUMENTED | Documented through business sales and profits |
+| Source of Funds | DOCUMENTED | Bank statements showing legitimate business income |
+| Beneficial Ownership Complexity | MODERATE | Clear ownership structure, some co-shareholders |
+| Geographic Risk | MODERATE | Dubai/UAE has moderate AML/CFT framework |
+
+Decision Section:
+| DECISION POINT | STATUS |
+|----------------|--------|
+| All Step 0 Searches Complete | YES |
+| All Searches Returned CLEAR | YES |
+| Material Discrepancies Found | NO |
+| Escalation Required | YES - EDD Mandatory (HNWI) |
+| Risk Assessment | HIGH (62/100) |
+| Approval Authority | Compliance Manager + MLRO (EDD Required) |
+| EDD Approval | PENDING |
+| Status | ESCALATED FOR SENIOR REVIEW |
+
+======================================================================================
+SHEET 2: BUSINESS INTERESTS & DIRECTORSHIPS
+======================================================================================
+
+Active Directorships Summary:
+
+| COMPANY | JURISDICTION | REGISTRATION | ROLE | OWNERSHIP | BUSINESS | STATUS |
+|---------|---------------|---------------|------|-----------|----------|--------|
+| Thompson Capital Ltd | UK | 09876543 | Managing Director | 100% | Investment Consulting | ACTIVE |
+| Gulf Trading & Logistics Ltd | UAE | ae-dfrtrading | CEO | 75% | Logistics/Trade | ACTIVE |
+| Thompson Property Holdings FZCO | Jebel Ali FZ | fz-2018-001234 | Director | 60% | Real Estate Development | ACTIVE |
+
+Detailed Company Analysis:
+
+Company 1: Thompson Capital Limited
+| Detail | Information |
+|--------|-------------|
+| Jurisdiction | United Kingdom |
+| Company Registration | 09876543 |
+| Incorporation Date | 2010 |
+| Alexander Thompson Role | Managing Director & 100% Shareholder |
+| Business Description | Investment company and business consulting |
+| Employees | 8 (approx) |
+| Latest Accounts (2025) | Revenue: £4.2m, Profit: £680k, Assets: £2.8m |
+| Regulatory Status | UK Companies House - Good Standing |
+| Verification | Companies House records confirm registration and directorship |
+
+Company 2: Gulf Trading & Logistics Limited
+| Detail | Information |
+|--------|-------------|
+| Jurisdiction | United Arab Emirates (Dubai) |
+| Company Registration | ae-dfrtrading |
+| Incorporation Date | 2015 |
+| Alexander Thompson Role | CEO & 75% Shareholder |
+| Co-Shareholder | Fahad Al-Maktoum (25%) - Long-standing business partner |
+| Business Description | International logistics, trade facilitation, freight forwarding |
+| Employees | 35 (approx) |
+| Latest Accounts (2025) | Revenue: AED 15m (~£3.1m), Profit: AED 2.1m (~£435k) |
+| Regulatory Status | UAE Ministry of Commerce - Good Standing |
+| Business Track Record | 11 years operation, established client base |
+| Verification | UAE business registry confirms registration; Industry reputation verified |
+
+Company 3: Thompson Property Holdings FZCO
+| Detail | Information |
+|--------|-------------|
+| Jurisdiction | Jebel Ali Free Zone (Dubai) |
+| Company Registration | fz-2018-001234 |
+| Incorporation Date | 2018 |
+| Alexander Thompson Role | Director & 60% Shareholder |
+| Co-Shareholder | Family Trust (40%) - controlled by spouse's family |
+| Business Description | Real estate investment and property development |
+| Current Status | Development phase (property portfolio acquisition phase) |
+| Asset Base (2025) | AED 8.5m (~£1.8m) in acquired real estate |
+| Regulatory Status | JAFZA - Good Standing |
+| Business Model | Medium-term hold for capital appreciation |
+| Verification | JAFZA registry confirms registration and status |
+
+Co-Shareholder Verification:
+| Co-Shareholder | Relationship | Background | Risk Assessment |
+|---|---|---|---|
+| Fahad Al-Maktoum | Business Partner (Gulf Trading) | UAE business executive, 15+ years experience | LOW RISK - Established business associate |
+| Family Trust (Thompson Property) | Family structure | Managed by spouse's family | LOW RISK - Family arrangement |
+
+Previous Company Exit:
+| Company | Thompson Software Solutions Limited |
+|---|---|
+| Original Business | Software development and IT consulting |
+| Incorporation | 2000 |
+| Exit Date | 2019 |
+| Exit Method | Acquisition by TechGlobal plc (£8.5 million) |
+| Proceeds Handling | Reinvested in Thompson Capital and Gulf Trading & Logistics |
+| Verification | TechGlobal plc acquisition documented, funds traced |
+
+Directorship History Verification:
+- [✓] All current directorships disclosed in application
+- [✓] All current directorships verified against Companies House/UAE registries
+- [✓] Previous company exit documented (2019)
+- [✓] No undisclosed directorships found in registry searches
+- [✓] No disqualifications or regulatory issues
+- [✓] No director disqualification records
+
+======================================================================================
+SHEET 3: SOURCE OF WEALTH & FUNDS ANALYSIS (EDD)
+======================================================================================
+
+Wealth Source Documentation:
+
+Primary Source: Business Ownership & Capital Appreciation
+
+| Period | Event | Wealth Generation | Documentation |
+|--------|-------|-------------------|---|
+| 2000-2010 | Thompson Software Solutions | Initial capital building through software business | Company accounts, business history |
+| 2010-2019 | Business sale proceeds | £8.5 million from acquisition (TechGlobal plc) | Acquisition documents, bank statements |
+| 2010-Present | Thompson Capital returns | Annual returns ~£500k-800k | Company accounts 2010-2025 |
+| 2015-Present | Gulf Trading & Logistics | Annual dividends ~£250k-350k | Company accounts 2015-2025 |
+| 2018-Present | Property Holdings appreciation | Capital appreciation in real estate | Property valuations, account statements |
+
+Wealth Accumulation Timeline:
+- 2000: Started software business (initial capital: £50k personal savings)
+- 2005: Software business revenue reaching £2m+ annually
+- 2010: Software business sold for £8.5m (net proceeds: ~£7m after tax)
+- 2010: Established Thompson Capital Ltd with £6m initial capital
+- 2015: Co-founded Gulf Trading & Logistics (£500k initial investment)
+- 2018: Real estate investment program (£2m invested in properties)
+- 2026: Estimated net worth £18-22m
+
+Current Wealth Composition:
+| Asset | Value | Verification | Notes |
+|-------|-------|---|---|
+| Thompson Capital Ltd | £2.8m | Latest accounts 2025 | Investment company, liquid assets |
+| Gulf Trading & Logistics | £1.2m | Latest accounts 2025 | Operating business, tied-up capital |
+| Real Estate Portfolio (Thompson Property) | £1.8m | Property valuations, account balances | Development phase, medium-term hold |
+| Personal Investments | £4.5m | Investment statements | Stocks, bonds, managed portfolio |
+| Cash & Liquid Assets | £2.1m | Bank statements 2025 | Available for operations/investment |
+| Residential Properties | £6-8m | Property valuations (Dubai) | Primary residence and investment properties |
+| **TOTAL ESTIMATED** | **£18-22m** | **Multiple sources verified** | **Range reflects market valuations** |
+
+Source of Funds Documentation:
+| Documentation | Verification | Status |
+|---|---|---|
+| Business acquisition documents (2019 software sale) | [✓] Verified | Provides £8.5m injection |
+| Bank statements (2010-2026) | [✓] Verified | Trace fund movements post-sale |
+| Company accounts (all 3 companies, 2010-2025) | [✓] Verified | Document ongoing business income |
+| UAE tax returns (2024, 2025) | [✓] Verified | Confirm declared business income |
+| Investment statements | [✓] Verified | Document investment portfolio |
+| Property purchase documents | [✓] Verified | Support real estate holdings |
+| Dividend payment records | [✓] Verified | Show ongoing wealth generation |
+
+Wealth Narrative Assessment:
+**Credibility:** VERIFIED & SUPPORTED
+- Business sale proceeds clearly documented (£8.5m)
+- Subsequent business income documented (£1m+ annually from operating companies)
+- Investment returns documented
+- Real estate holdings documented
+- All documentation consistent and cross-verifiable
+- **Conclusion:** Source of wealth is legitimate, documented, and credible
+
+======================================================================================
+SHEET 4: ENHANCED RISK ASSESSMENT (EDD)
+======================================================================================
+
+Overall Risk Assessment:
+
+| ELEMENT | SCORE | BAND | DETAIL |
+|---------|-------|------|--------|
+| Geographic Risk | 45/100 | MEDIUM-HIGH | UAE/Dubai moderate AML/CFT, multi-jurisdictional |
+| Customer Risk | 60/100 | HIGH | HNWI, complex business structure, multiple directorships |
+| Product Risk | 50/100 | MEDIUM-HIGH | Large transactions, international transfers, investment account |
+| Channel Risk | 30/100 | MEDIUM | Standard onboarding but for high-net-worth profile |
+| **TOTAL RISK SCORE** | **62/100** | **HIGH** | **EDD REQUIRED - SENIOR APPROVAL** |
+
+Detailed Risk Scoring:
+
+Geographic Risk (30% weight) = 45/100
+| Factor | Assessment | Score |
+|--------|------------|-------|
+| Country of Residence | UAE (Dubai) - Moderate AML/CFT framework | 50 |
+| Nationality | UK - Low risk | 20 |
+| Business Jurisdictions | UK (low), UAE (moderate), Jebel Ali FZ (moderate) | 40 |
+| International Exposure | High - Multiple jurisdictions, significant cross-border activity | 60 |
+| **GEO RISK SUBTOTAL** | | 45 |
+
+Customer Risk (35% weight) = 60/100
+| Factor | Assessment | Score |
+|--------|------------|-------|
+| HNWI Classification | Yes - £18-22m net worth | 80 |
+| Business Interests | Multiple directorships (3), complex structure | 60 |
+| PEP Status | Not PEP (primary), no direct political exposure | 10 |
+| Background Verification | 25+ years documented business history | 40 |
+| Source of Wealth Clarity | Documented business sales and profits | 50 |
+| Co-Shareholder Risk | Partner Fahad Al-Maktoum, established business associate | 40 |
+| Beneficial Ownership Complexity | Moderate - Some trust arrangements | 50 |
+| **CUSTOMER RISK SUBTOTAL** | | 60 |
+
+Product Risk (25% weight) = 50/100
+| Factor | Assessment | Score |
+|--------|------------|-------|
+| Account Type | Wealth management/international banking | 50 |
+| Expected Transaction Volume | High - £2m+ annually expected | 60 |
+| Transaction Complexity | High - Multiple currencies, international transfers | 60 |
+| Product Sophistication | Complex - Investment account, multi-currency | 50 |
+| **PRODUCT RISK SUBTOTAL** | | 50 |
+
+Channel Risk (10% weight) = 30/100
+| Factor | Assessment | Score |
+|--------|------------|-------|
+| Application Channel | Standard onboarding process | 30 |
+| Documentation Quality | Excellent - Complete, comprehensive documentation | 20 |
+| **CHANNEL RISK SUBTOTAL** | | 30 |
+
+Risk Factors - Aggravating Elements:
+- [HIGH] HNWI classification (£18-22m net worth)
+- [HIGH] Multiple company directorships (3 active companies)
+- [MEDIUM] International multi-jurisdictional structure
+- [MEDIUM] Complex business operations (3 different business types)
+- [MEDIUM] Large expected transaction volumes
+- [MEDIUM] Co-shareholder arrangements
+- [MEDIUM] Offshore entity involvement (Jebel Ali Free Zone)
+
+Risk Factors - Mitigating Elements:
+- [✓] Clear, documented business background (25+ years)
+- [✓] Legitimate wealth source (documented business sale + profits)
+- [✓] No adverse media findings
+- [✓] No PEP status
+- [✓] No sanctions or criminal records
+- [✓] Clean regulatory history (UK/UAE)
+- [✓] Complete beneficial ownership disclosure
+- [✓] Professional business track record
+- [✓] Established business partnerships
+
+EDD Monitoring Requirements:
+
+Enhanced Due Diligence Approval Required:
+- [REQUIRED] Compliance Manager sign-off
+- [REQUIRED] MLRO final approval
+- [REQUIRED] Senior management awareness
+
+Enhanced Documentation:
+- [✓] Source of wealth narrative - DOCUMENTED
+- [✓] Source of funds documentation - VERIFIED
+- [✓] Business rationale for structure - EXPLAINED
+- [✓] Co-shareholder verification - COMPLETED
+- [✓] Beneficial ownership penetration - ACHIEVED
+
+Enhanced Monitoring Plan (if approved):
+- Transaction monitoring: Monthly review (vs quarterly for standard accounts)
+- Threshold for alert: £50,000 per transaction (vs £250,000 standard)
+- Quarterly enhanced review meetings
+- Semi-annual full KYC refresh
+- Annual formal EDD reassessment
+- Immediate notification of structure changes
+- Ongoing verification of company accounts
+
+======================================================================================
+SHEET 5: DECISION & ESCALATION
+======================================================================================
+
+Decision Summary:
+
+| ELEMENT | STATUS | DETAIL |
+|---------|--------|--------|
+| Step 0 Status | COMPLETE | All 5 searches completed 11/02/2026 |
+| Verification Gate | PASSED | All searches CLEAR, wealth documented |
+| Escalation Trigger | YES | HNWI + Complex Structure = Mandatory EDD |
+| Decision | ESCALATED FOR APPROVAL | Case escalated to Manager/MLRO |
+| Risk Rating | HIGH | Score 62/100 - HIGH risk band |
+| EDD Requirement | MANDATORY | HNWI status requires enhanced due diligence |
+| Approval Authority | Compliance Manager + MLRO | Not analyst self-approval (risk too high) |
+| Current Status | PENDING APPROVAL | Awaiting senior management decision |
+
+Escalation Rationale:
+1. **HNWI Status:** Net worth £18-22m triggers automatic EDD
+2. **Complex Structure:** 3 operating directorships across multiple jurisdictions
+3. **International Operations:** UK, UAE, Multi-jurisdictional operations
+4. **Large Transactions:** Expected monthly transfers of £200k+
+5. **Regulatory Prudence:** Comprehensive due diligence warranted before onboarding
+
+Step 0 Verification Summary:
+- Search 1 (Adverse Media): CLEAR - No negative findings in comprehensive search
+- Search 2 (Directorships): MAPPED - 3 active directorships identified and verified
+- Search 3 (PEP Status): NOT PEP - Customer not politically exposed
+- Search 4 (Professional Background): VERIFIED - 25+ years documented business history
+- Search 5 (Sanctions/Crime): CLEAR - No sanctions or criminal records
+
+**All Step 0 requirements met - case eligible for approval pending EDD assessment**
+
+Escalation Brief:
+
+**TO:** Compliance Manager & MLRO
+**FROM:** KYC Analyst
+**DATE:** 11/02/2026
+**CASE:** KYC-20260211-ONB-THOMPSON-001
+**SUBJECT:** EDD Escalation - HNWI Complex Structure
+
+**Customer Summary:**
+Alexander Thompson, 60, British entrepreneur seeking wealth management account.
+Estimated net worth £18-22m from business ownership and capital appreciation.
+
+**Key Factors:**
+✓ All Step 0 searches CLEAR/VERIFIED
+✓ Wealth source documented and legitimate
+✓ No adverse findings or regulatory issues
+✓ 25+ years documented business history
+✓ Professional business credentials verified
+
+**EDD Triggers:**
+- HNWI classification (£18-22m)
+- Multiple directorships (3 active companies)
+- Multi-jurisdictional operations
+- Large transaction volumes expected
+
+**Recommendation:** APPROVE WITH ENHANCED MONITORING
+(Pending completion of enhanced due diligence documentation)
+
+**Risk Rating:** HIGH (62/100)
+**Monitoring Plan:** Monthly transaction review, quarterly EDD meetings
+**Next Steps:** Await manager approval decision
+
+**Conclusion:**
+Customer presents legitimate business profile with documented wealth source.
+While complexity warrants EDD, all initial verification returns clear results.
+Recommend approval with enhanced ongoing monitoring.
+

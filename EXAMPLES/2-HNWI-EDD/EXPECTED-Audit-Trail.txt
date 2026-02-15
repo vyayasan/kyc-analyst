@@ -1,0 +1,178 @@
+CASE AUDIT TRAIL - IMMUTABLE RECORD
+================================================================================
+Case Reference: KYC-20260211-ONB-THOMPSON-001
+Customer: Alexander Thompson
+Audit Trail Generated: 11 February 2026 14:45:32 UTC
+Trail Status: LOCKED & IMMUTABLE
+Retention Period: 5 years (until 11/02/2031)
+
+================================================================================
+TIMELINE OF EVENTS - HNWI EDD ESCALATION
+================================================================================
+
+EVENT 1: APPLICATION RECEIVED
+Date/Time: 05/02/2026 10:15:22 UTC
+Status: RECEIVED
+- Application submitted with comprehensive documentation
+- Identity verified against UK Passport
+- Initial assessment: HNWI profile with complex business structure
+- Flagged for EDD review immediately upon triage
+
+EVENT 2: INITIAL ASSESSMENT
+Date/Time: 05/02/2026 11:30:45 UTC
+Status: REVIEWED - ESCALATION TRIGGERED
+- All documentation reviewed (9 documents)
+- HNWI status confirmed (est. £18-22m net worth)
+- Multiple directorships identified (3 companies)
+- Multi-jurisdictional operations (UK, UAE, Free Zone)
+- **Decision:** Escalate for EDD pathway (do not process as standard onboarding)
+
+EVENT 3: STEP 0 VERIFICATION INITIATED
+Date/Time: 06/02/2026 09:00:00 UTC
+Status: IN PROGRESS
+- Enhanced verification protocol activated
+- All 5 searches queued with EDD parameters
+- Comprehensive scope for all searches (90+ sources)
+- Estimated completion: 4-6 hours
+
+EVENT 4: SEARCH 1 COMPLETED - ADVERSE MEDIA
+Date/Time: 06/02/2026 10:35:15 UTC
+Status: COMPLETE - CLEAR
+- 72+ international sources searched including ICIJ offshore leaks
+- No adverse findings on Alexander Thompson
+- No regulatory actions or litigation identified
+- Result: CLEAR
+
+EVENT 5: SEARCH 2 COMPLETED - DIRECTORSHIPS
+Date/Time: 06/02/2026 11:20:48 UTC
+Status: COMPLETE - MAPPED & VERIFIED
+- All 3 companies identified:
+  1. Thompson Capital Ltd (UK) - 100% shareholder
+  2. Gulf Trading & Logistics (UAE) - 75% shareholder
+  3. Thompson Property Holdings FZCO - 60% shareholder
+- All disclosed in application
+- No undisclosed directorships
+- Co-shareholder verified (Fahad Al-Maktoum - business partner 15+ years)
+- Result: 3 COMPANIES VERIFIED
+
+EVENT 6: SEARCH 3 COMPLETED - PEP STATUS
+Date/Time: 06/02/2026 12:15:33 UTC
+Status: COMPLETE - NOT PEP (EXTENDED FAMILY CHECKED)
+- Direct PEP status: NOT PEP
+- Family members checked: Spouse Victoria Thompson - NOT PEP
+- Extended family: Cousin Sir Michael Thompson (QC) - Legal profession, NOT political
+- Business associate: Fahad Al-Maktoum - No PEP connection
+- Result: NOT PEP
+
+EVENT 7: SEARCH 4 COMPLETED - PROFESSIONAL BACKGROUND
+Date/Time: 06/02/2026 13:45:22 UTC
+Status: COMPLETE - VERIFIED (25+ YEARS DOCUMENTED)
+- Software company (2000-2019) - Founded, grew, sold for £8.5m
+- Thompson Capital (2010-2025) - 15 years documented operations
+- Gulf Trading (2015-2025) - 11 years documented operations
+- Education confirmed
+- No discrepancies between claims and verified evidence
+- Result: VERIFIED
+
+EVENT 8: SEARCH 5 COMPLETED - SANCTIONS & CRIME
+Date/Time: 06/02/2026 14:30:10 UTC
+Status: COMPLETE - CLEAR
+- All 12 sanctions lists: No matches
+- No criminal records
+- No financial enforcement actions
+- Result: CLEAR
+
+EVENT 9: WEALTH SOURCE DOCUMENTATION REVIEW
+Date/Time: 07/02/2026 09:00:00 UTC
+Status: COMPLETE - VERIFIED & DOCUMENTED
+- Business sale documents (2019, TechGlobal plc, £8.5m): VERIFIED
+- Bank statements showing proceeds: VERIFIED
+- Company accounts (all 3 entities, 2010-2025): VERIFIED
+- Investment statements: VERIFIED
+- Real estate documentation: VERIFIED
+- Wealth narrative: CREDIBLE & SUPPORTED
+- Result: WEALTH SOURCE DOCUMENTED & LEGITIMATE
+
+EVENT 10: BENEFICIAL OWNERSHIP VERIFICATION
+Date/Time: 07/02/2026 10:30:15 UTC
+Status: COMPLETE - FULL PENETRATION TO NATURAL PERSONS
+- Thompson Capital: Alexander Thompson 100% (natural person)
+- Gulf Trading: Alexander Thompson 75%, Fahad Al-Maktoum 25%
+- Property Holdings: Alexander Thompson 60%, Family Trust 40%
+- Trust ownership: Verified as family structure
+- Result: COMPLETE OWNERSHIP STRUCTURE IDENTIFIED
+
+EVENT 11: RISK ASSESSMENT CALCULATED
+Date/Time: 11/02/2026 10:45:15 UTC
+Status: COMPLETE
+- Geographic Risk: 45/100 (UAE multi-jurisdictional exposure)
+- Customer Risk: 60/100 (HNWI, complex business structure)
+- Product Risk: 50/100 (Large transaction volumes)
+- Channel Risk: 30/100 (Standard process)
+- **TOTAL RISK SCORE: 62/100**
+- **RISK BAND: HIGH**
+- **EDD REQUIRED: YES - MANDATORY FOR HNWI**
+
+EVENT 12: DECISION GATE ASSESSMENT
+Date/Time: 11/02/2026 11:15:32 UTC
+Status: ESCALATION DECISION
+- All Step 0 searches: COMPLETE (5/5)
+- All searches: CLEAR/VERIFIED
+- Discrepancies: NONE
+- **Decision Gate Result: PROCEED TO EDD PATHWAY (NOT STANDARD APPROVAL)**
+- **Escalation Level: Manager/MLRO approval required**
+
+EVENT 13: SENIOR ANALYST REVIEW
+Date/Time: 11/02/2026 12:00:00 UTC
+Status: EDD ESCALATION DOCUMENTED
+- All search results reviewed
+- Risk assessment confirmed (62/100 = HIGH)
+- EDD triggers confirmed:
+  * HNWI status (£18-22m)
+  * Multiple directorships (3)
+  * Multi-jurisdictional operations
+  * Large transaction volumes
+- Recommendation: APPROVE WITH ENHANCED MONITORING CONDITIONS
+- Escalation Package: Complete and ready for manager review
+
+EVENT 14: ESCALATION BRIEF PREPARED
+Date/Time: 11/02/2026 13:30:45 UTC
+Status: ESCALATION BRIEF GENERATED
+- Executive summary prepared
+- Risk assessment documented
+- Recommended conditions specified
+- Supporting documentation compiled
+- Status: READY FOR MANAGER REVIEW
+
+EVENT 15: CASE ESCALATED TO COMPLIANCE MANAGER
+Date/Time: 11/02/2026 14:00:00 UTC
+Status: ESCALATED TO MANAGER
+- Case escalated per EDD protocol
+- Escalation brief forwarded
+- All supporting documentation attached
+- Status: AWAITING MANAGER DECISION
+
+EVENT 16: AUDIT TRAIL GENERATION
+Date/Time: 11/02/2026 14:45:32 UTC
+Status: LOCKED & IMMUTABLE
+- All 16 events verified and locked
+- Cryptographic signature applied
+- Immutability enabled
+- Retention: 5 years (until 11/02/2031)
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+
+Case Duration: 6 days 4 hours 45 minutes
+Active Processing Time: 2 days processing
+Step 0 Searches: 5/5 (100% complete)
+Search Results: 5/5 (CLEAR/VERIFIED)
+Escalations: 1 (Mandatory EDD)
+Discrepancies: 0
+Current Status: PENDING MANAGER/MLRO APPROVAL
+Audit Trail: LOCKED & IMMUTABLE
+
+================================================================================
+END OF AUDIT TRAIL
+================================================================================
