@@ -161,7 +161,7 @@ kyc-analyst/
 
 ## Background
 
-Built by someone with 15 years in compliance (Thredd, HSBC, RBC, Discover). Small teams (1-20 analysts) were paying significant amounts annually for platforms that navigate public websites, screen free data sources, calculate risk scores using open formulas, and generate reports. Foundation models can do all of this.
+Built by a product leader who spent a decade shipping fintech and compliance products -- VP Product at Thredd (100+ fintechs, 47 countries), CPO/Co-Founder at ComplyStream (Google AI First Accelerator, 1 of 16 from 500+ applicants). Small compliance teams (1-20 analysts) were paying significant amounts annually for platforms that navigate public websites, screen free data sources, calculate risk scores using open formulas, and generate reports. Foundation models can do all of this.
 
 Not building a company. Testing a thesis: foundation models commoditized GRC middleware for SMB compliance teams.
 
