@@ -1,0 +1,42 @@
+{
+  "name": "kyc-analyst",
+  "version": "1.0.0",
+  "description": "Open-source KYC/AML compliance automation with mandatory Step 0 independent verification, 17 human-in-the-loop stagegates, deterministic risk scoring, Excel dashboards, PDF reports, and immutable audit trails.",
+  "author": {
+    "name": "Vyayasan"
+  },
+  "homepage": "https://github.com/vyayasan/kyc-analyst",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vyayasan/kyc-analyst.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "kyc",
+    "aml",
+    "compliance",
+    "onboarding",
+    "sanctions-screening",
+    "pep",
+    "due-diligence",
+    "fintech",
+    "claude",
+    "cowork",
+    "mcp"
+  ],
+  "capabilities": {
+    "commands": {
+      "onboard": "Customer onboarding with mandatory Step 0 independent verification",
+      "onboard-interactive": "Interactive dialog-based onboarding with step-by-step guidance",
+      "refresh": "Periodic customer review with independent verification",
+      "screen": "Sanctions and PEP screening with comprehensive searches",
+      "monitor": "AML transaction monitoring and reporting",
+      "risk": "Risk reassessment with updated due diligence"
+    }
+  },
+  "system_requirements": {
+    "platform": "Claude Code or Claude Cowork",
+    "python": "3.10+",
+    "dependencies": ["fpdf2", "openpyxl"]
+  }
+}

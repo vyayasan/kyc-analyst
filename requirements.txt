@@ -1,0 +1,5 @@
+# KYC Analyst Plugin - Python Dependencies
+# Install: pip install -r requirements.txt
+
+fpdf2>=2.7.0
+openpyxl>=3.1.0

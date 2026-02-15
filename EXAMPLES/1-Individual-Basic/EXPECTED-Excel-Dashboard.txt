@@ -1,0 +1,303 @@
+EXPECTED EXCEL DASHBOARD OUTPUT
+Case: KYC-20260211-ONB-SMITH-001
+Generated: 11/02/2026
+User: KYC Analyst
+
+======================================================================================
+SHEET 1: EXECUTIVE SUMMARY
+======================================================================================
+
+Header Section:
+| FIELD | VALUE |
+|-------|-------|
+| Case ID | KYC-20260211-ONB-SMITH-001 |
+| Customer Name | John Smith |
+| Date of Birth | 15/03/1985 (Age: 40 years) |
+| Nationality | British |
+| Country of Residence | United Kingdom |
+| Application Date | 10/02/2026 |
+| Onboarding Status | PROCEED |
+| Risk Rating | LOW |
+| Risk Score | 15/100 |
+| Decision Date | 11/02/2026 |
+| Analyst | [Analyst Name] |
+| Approval Status | APPROVED |
+
+Customer Profile Section:
+| PROFILE ELEMENT | DETAIL |
+|-----------------|--------|
+| Full Name | John Smith |
+| Current Address | 42 Riverside Avenue, Manchester, M2 5EX, UK |
+| Occupation | Senior Software Engineer |
+| Employer | TechCorp Solutions Ltd |
+| Employment Start | March 2021 (5 years tenure) |
+| Annual Income | £85,000 |
+| Account Type | Personal Current & Savings |
+| Expected Activity | Salary deposits, personal expenses |
+| Marital Status | Married |
+| Education | MSc Computer Science, University of Manchester |
+
+Verification Results Section:
+| VERIFICATION ELEMENT | STATUS | DETAIL |
+|----------------------|--------|--------|
+| Identity | VERIFIED | UK Passport PP123456789, expires 15/03/2033 |
+| Address | VERIFIED | Council tax bill dated 02/2026 |
+| Employment | VERIFIED | TechCorp Solutions Ltd, Senior Software Engineer |
+| Income | VERIFIED | £85,000 p.a., confirmed via payslips |
+| Contact Details | VERIFIED | Phone and email confirmed |
+| Application | COMPLETE | Fully completed and signed |
+| Declaration | CONFIRMED | No PEP, no directorships, no undisclosed interests |
+
+Step 0 Verification Results:
+| SEARCH | RESULT | FINDINGS |
+|--------|--------|----------|
+| 1. Adverse Media | CLEAR | No adverse media found in 72+ sources |
+| 2. Directorships | CLEAR | No company directorships identified |
+| 3. PEP Status | NOT PEP | No PEP status, not politically exposed |
+| 4. Professional Background | VERIFIED | Employment verified, no discrepancies |
+| 5. Sanctions/Crime | CLEAR | No sanctions matches, no criminal records |
+
+Decision Section:
+| DECISION POINT | STATUS |
+|----------------|--------|
+| All Step 0 Searches Complete | YES |
+| All Searches Returned CLEAR | YES |
+| Material Discrepancies Found | NO |
+| Escalation Required | NO |
+| Decision Gate | PROCEED |
+| Risk Assessment | LOW RISK |
+| Approval Authority | Analyst (Self-approved under LOW risk) |
+| Next Steps | Proceed to Customer Due Diligence (CDD) |
+| Final Approval | APPROVED - 11/02/2026 |
+
+======================================================================================
+SHEET 2: VERIFICATION DETAILS
+======================================================================================
+
+Step 0 - Search 1: Adverse Media
+
+Search Parameters:
+| Parameter | Value |
+|-----------|-------|
+| Search Scope | 72+ adverse media sources |
+| Sources Queried | Google News, BBC, Reuters, Financial Times, Legal Databases |
+| Geographic Focus | UK, EU, International |
+| Time Period | Last 10 years (2016-2026) |
+| Search Terms | "John Smith" + "Manchester" + "Software Engineer" |
+
+Results:
+| SOURCE | RESULT | DETAIL |
+|--------|--------|--------|
+| Google News | CLEAR | No relevant results for John Smith, Manchester |
+| BBC | CLEAR | No adverse coverage |
+| Reuters | CLEAR | No results |
+| Financial Times | CLEAR | No adverse coverage |
+| Companies House News | CLEAR | Not listed as director |
+| Court Records (UK) | CLEAR | No court cases found |
+| Regulatory Actions | CLEAR | No FCA, ICO, or other regulatory actions |
+| Insolvency Register | CLEAR | Not listed as individual in insolvency |
+| Fraud/Crime Databases | CLEAR | No matching records |
+| International Databases | CLEAR | No adverse findings |
+
+Overall: CLEAR - No adverse media findings
+
+Search 2: Directorships
+
+Search Parameters:
+| Parameter | Value |
+|-----------|-------|
+| Search Scope | Companies House + Equivalent Registries |
+| Geographic Scope | UK (primary), EU registries (secondary) |
+| Search Terms | "John Smith" + "DOB: 15/03/1985" |
+| Time Period | All periods |
+
+Results:
+| REGISTRY | RESULT | COMPANY | ROLE | STATUS |
+|----------|--------|---------|------|--------|
+| Companies House | CLEAR | None | N/A | N/A |
+| EU Business Registries | CLEAR | None | N/A | N/A |
+
+Overall: CLEAR - No directorships identified
+
+Search 3: PEP Status
+
+Search Parameters:
+| Parameter | Value |
+|-----------|-------|
+| Search Scope | 5 PEP Databases |
+| Databases Used | EveryPolitician, Wikidata, UK Parliament, Register of Interests, CIA |
+| Search Terms | "John Smith" + "1985" + "Manchester" |
+| Family Check | Wife Emma Smith checked - NOT PEP |
+
+Results:
+| DATABASE | RESULT | PEP STATUS | TIER | DETAIL |
+|----------|--------|-----------|------|--------|
+| EveryPolitician | NO MATCH | NOT PEP | N/A | Not identified as political figure |
+| Wikidata | NO MATCH | NOT PEP | N/A | No political entry |
+| UK Parliament | NO MATCH | NOT PEP | N/A | Not MP or House member |
+| Register of Interests | NO MATCH | NOT PEP | N/A | No registered interests |
+| CIA World Factbook | NO MATCH | NOT PEP | N/A | No identified connection |
+| Family Members | NO MATCH | NOT PEP | N/A | Spouse Emma Smith - NOT PEP |
+
+Overall: NOT PEP - No politically exposed person status
+
+Search 4: Professional Background
+
+Verification Parameters:
+| Parameter | Value |
+|-----------|-------|
+| Verification Method | LinkedIn, Company Website, Employment Contract |
+| Employment Claim | Senior Software Engineer at TechCorp Solutions Ltd |
+| Start Date | March 2021 |
+| Duration | 5 years |
+
+Results:
+| SOURCE | FINDING | DETAIL |
+|--------|---------|--------|
+| LinkedIn | VERIFIED | LinkedIn profile matches: Senior Software Engineer, TechCorp Solutions Ltd, 5 years |
+| TechCorp Website | VERIFIED | Listed in company staff directory |
+| Employment Contract | VERIFIED | Permanent contract dated 01/03/2021 |
+| Payslips | VERIFIED | Recent payslips confirm employment and income |
+| Previous Role | VERIFIED | DataFlow Systems (2008-2016) - Software Developer |
+| Education | VERIFIED | MSc Computer Science, University of Manchester, 2008 |
+| Discrepancies | NONE | All claims match verified evidence |
+
+Overall: VERIFIED - Professional background confirmed, no discrepancies
+
+Search 5: Sanctions/Crime
+
+Search Parameters:
+| Parameter | Value |
+|-----------|-------|
+| Search Scope | 12 Sanctions/Legal Sources |
+| Sanctions Lists | OFAC SDN, EU Consolidated List, UK HM Treasury, UN Sanctions |
+| Legal Databases | Interpol, Court Records, Police Records (where available) |
+| Search Terms | "John Smith" + "DOB: 15/03/1985" + "Nationality: British" |
+
+Results:
+| SOURCE | RESULT | DETAIL |
+|--------|--------|--------|
+| OFAC SDN | CLEAR | No match - not in US sanctions list |
+| EU Consolidated List | CLEAR | No match |
+| UK HM Treasury Sanctions | CLEAR | No match |
+| UN Sanctions List | CLEAR | No match |
+| Interpol Red Notices | CLEAR | Not listed |
+| UK Court Records | CLEAR | No convictions or cases |
+| Police Records | CLEAR | No criminal record (where available) |
+| Insolvency/CCJ | CLEAR | Not in insolvency register, no CCJs |
+| Financial Crime Databases | CLEAR | No financial crime record |
+| Other Sanctions Sources | CLEAR | No matches in other sources |
+
+Overall: CLEAR - No sanctions or criminal records found
+
+======================================================================================
+SHEET 3: RISK ASSESSMENT
+======================================================================================
+
+Risk Scoring Matrix:
+
+| RISK FACTOR | WEIGHT | SCORE | WEIGHTED SCORE |
+|--------------|--------|-------|----------------|
+| Geographic Risk | 30% | 10/100 | 3.0 |
+| Customer Risk | 35% | 15/100 | 5.25 |
+| Product Risk | 25% | 15/100 | 3.75 |
+| Channel Risk | 10% | 10/100 | 1.0 |
+| TOTAL RISK SCORE | 100% | | 13.0 |
+
+RISK SCORING DETAIL:
+
+Geographic Risk (30% weight) = 10/100
+| Factor | Assessment | Score |
+|--------|------------|-------|
+| Country of Residence | UK - Low AML/CFT risk | 5 |
+| Nationality | UK - Low risk jurisdiction | 5 |
+| Banking Geography | UK-based accounts | 5 |
+| International Exposure | No international activity expected | 5 |
+| GEO RISK SUBTOTAL | | 10 |
+
+Customer Risk (35% weight) = 15/100
+| Factor | Assessment | Score |
+|--------|------------|-------|
+| Employment Verification | Confirmed, 5 years tenure | 10 |
+| Income Clarity | Salaried employment, stable | 10 |
+| PEP Status | NOT PEP | 0 |
+| Background Check | No adverse media | 0 |
+| Business Interests | None disclosed, none found | 0 |
+| Age/Profile Stability | 40 years old, established | 5 |
+| CUSTOMER RISK SUBTOTAL | | 15 |
+
+Product Risk (25% weight) = 15/100
+| Factor | Assessment | Score |
+|--------|------------|-------|
+| Account Type | Personal current & savings - Low risk | 10 |
+| Expected Activity | Salary deposits, personal expenses | 5 |
+| Transaction Value | Standard personal account limits | 10 |
+| Complexity | Simple, straightforward | 5 |
+| PRODUCT RISK SUBTOTAL | | 15 |
+
+Channel Risk (10% weight) = 10/100
+| Factor | Assessment | Score |
+|--------|------------|-------|
+| Application Channel | Standard onboarding process | 5 |
+| Documentation Quality | Complete, verified | 5 |
+| CHANNEL RISK SUBTOTAL | | 10 |
+
+RISK RATING DETERMINATION:
+- Total Risk Score: 13.0/100
+- Risk Band: LOW (0-20)
+- Final Rating: **LOW RISK**
+- Justification: Standard employment profile, all verifications clear, low-risk geography, simple product
+
+MONITORING REQUIREMENTS (LOW RISK):
+- Standard transaction monitoring
+- Periodic reviews: Annual
+- Enhanced checks: Not required
+- Next review date: 11/02/2027
+
+======================================================================================
+SHEET 4: DECISION & APPROVAL
+======================================================================================
+
+Decision Summary:
+
+| ELEMENT | STATUS | DETAIL |
+|---------|--------|--------|
+| Step 0 Status | COMPLETE | All 5 searches completed 11/02/2026 |
+| Verification Gate | PASSED | All searches returned CLEAR results |
+| Discrepancies | NONE | No material discrepancies found |
+| Escalation Trigger | NO | No escalation factors present |
+| Decision | PROCEED | Case cleared for onboarding |
+| Risk Rating | LOW | Score 13/100 - LOW risk band |
+| Approval Authority | Analyst Self-Approval | LOW risk allows analyst approval |
+| Final Approval | APPROVED | Approved 11/02/2026 by [Analyst Name] |
+
+Regulatory Basis:
+- All 5 mandatory Step 0 searches completed per v1.0.0 requirements
+- Customer Due Diligence (CDD) requirements met
+- No Enhanced Due Diligence (EDD) required
+- Standard monitoring procedures to apply
+
+Next Steps:
+1. Proceed to full Customer Due Diligence
+2. Set up account with standard monitoring
+3. Schedule next review for 11/02/2027 (annual)
+4. File case in Case Management System
+5. Store audit trail per regulatory requirements
+
+Approval Details:
+| FIELD | VALUE |
+|-------|-------|
+| Approved By | [Analyst Name] |
+| Approval Date | 11/02/2026 |
+| Approval Authority | Analyst (LOW risk self-approval) |
+| Authority Level | Level 1 - Analyst |
+| Decision Time | 15 minutes (from application) |
+| Status | FINAL |
+
+Case Closure:
+- Case Status: APPROVED
+- Case Reference: KYC-20260211-ONB-SMITH-001
+- Storage Location: /Cases/2026/Individual/LOW-RISK/
+- Audit Trail: Generated and locked
+- All documents: Archived
+

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions & Discussion
+    url: https://github.com/vyayasan/kyc-analyst/discussions
+    about: Ask questions, share use cases, or discuss compliance workflows
+  - name: Security Vulnerability
+    url: https://github.com/vyayasan/kyc-analyst/blob/main/SECURITY.md
+    about: Report security issues privately — do not open a public issue
