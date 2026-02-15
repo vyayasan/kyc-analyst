@@ -1,0 +1,59 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature. Please describe the compliance workflow problem you're trying to solve.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What compliance workflow problem does this solve?
+      placeholder: "I need to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe what you'd like the plugin to do.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - New jurisdiction / regulation
+        - New data source
+        - New command
+        - Workflow improvement
+        - Output format
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: jurisdiction
+    attributes:
+      label: Jurisdiction / Regulation
+      description: Which country or regulation does this relate to?
+      placeholder: "UK MLR 2017 / US FinCEN / EU AMLD6 / etc."
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any other approaches you've thought about.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Screenshots, reference documents, regulatory links.

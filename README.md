@@ -3,18 +3,21 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/vyayasan/kyc-analyst/actions/workflows/lint.yml"><img src="https://github.com/vyayasan/kyc-analyst/actions/workflows/lint.yml/badge.svg" alt="Lint"/></a>
   <a href="https://github.com/vyayasan/kyc-analyst/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="MIT License"/></a>
   <a href="https://github.com/vyayasan/kyc-analyst/releases"><img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version 1.0.0"/></a>
-  <a href="https://claude.ai/cowork"><img src="https://img.shields.io/badge/platform-Claude%20Cowork-black.svg" alt="Claude Cowork"/></a>
+  <a href="https://github.com/vyayasan/kyc-analyst/stargazers"><img src="https://img.shields.io/github/stars/vyayasan/kyc-analyst?style=social" alt="GitHub Stars"/></a>
+  <a href="https://github.com/vyayasan/kyc-analyst/network/members"><img src="https://img.shields.io/github/forks/vyayasan/kyc-analyst?style=social" alt="GitHub Forks"/></a>
+  <a href="https://github.com/vyayasan/kyc-analyst/issues"><img src="https://img.shields.io/github/issues/vyayasan/kyc-analyst" alt="GitHub Issues"/></a>
   <a href="https://www.linkedin.com/in/sandipanee"><img src="https://img.shields.io/badge/-Sandi%20S-blue?logo=linkedin&style=flat-square" alt="LinkedIn"/></a>
   <a href="https://twitter.com/vyayasan"><img src="https://img.shields.io/twitter/follow/vyayasan" alt="Twitter"/></a>
 </p>
 
 ---
 
-Your compliance team deserves better tools.
+**Open-source KYC/AML compliance — 17 human-in-the-loop checkpoints, free public data sources, zero vendor lock-in.**
 
-Open-source KYC/AML compliance automation for [Claude Cowork](https://claude.ai/cowork). Uses only free public data sources. 17 mandatory human-in-the-loop checkpoints — AI assists, the analyst decides.
+Your compliance team deserves better tools. This plugin automates the repetitive parts of customer onboarding (sanctions screening, PEP checks, adverse media, risk scoring, report generation) while keeping a trained analyst in control of every decision. Built on free public data. Runs on any Claude client.
 
 > **Note:** Claude Cowork and plugins are currently in research preview. This plugin is an experimental open-source project and should be evaluated accordingly. See [Disclaimer](#disclaimer) below.
 
@@ -60,6 +63,18 @@ One UK fintech ran this plugin for 30 days with a team of 5 compliance analysts 
 | Legal review | — | Approved for pilot use | Firm-specific legal assessment |
 
 These numbers reflect one team's experience with one type of case. Enhanced due diligence, complex corporate structures, and multi-jurisdiction cases will take longer.
+
+### How It Compares
+
+| | KYC Analyst | Commercial Platforms | Manual Process |
+|---|---|---|---|
+| **Cost** | Free (MIT) | $10K–$100K+/yr | Analyst time only |
+| **Data sources** | Public (OFAC, UN, EU, CH, ICIJ) | Proprietary | Manual lookup |
+| **Human oversight** | 17 mandatory checkpoints | Configurable | Fully manual |
+| **Audit trail** | Immutable, timestamped, auto-generated | Varies | Often missing |
+| **Risk model** | Deterministic, inspectable, published formula | Typically opaque | Spreadsheet |
+| **Time per case** | ~27 min (pilot) | ~15–30 min | ~95 min |
+| **Vendor lock-in** | None — plain markdown, portable | High | None |
 
 ## How It Works
 
@@ -169,6 +184,18 @@ See [QUICK_START_GUIDE.md](./QUICK_START_GUIDE.md) for a full walkthrough of you
 - **PDF Report** — 17-section compliance report via fpdf2
 - **Case Folder** — Numbered folder structure (001-006) with immutable audit trail
 - **Multi-jurisdiction** — UK/EU (AMLD5, MLR 2017, FCA), US (FinCEN, BSA/AML, OFAC), MENA (CBUAE, SAMA)
+
+## Where It Runs
+
+Skills and commands are plain markdown files. No compiled code, no proprietary format, no lock-in.
+
+| Platform | How to use | Notes |
+|----------|-----------|-------|
+| **[Claude Cowork](https://claude.ai/cowork)** | Upload the plugin folder | Full GUI, recommended for non-technical users |
+| **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)** | `git clone` + `pip install -r requirements.txt` | CLI, works on macOS/Linux/Windows |
+| **Any Claude client** | Copy the `commands/` and `skills/` markdown files | Skills are portable — they are just system prompts with domain knowledge |
+
+The plugin uses Claude's native slash command and skill system. If your Claude client supports loading markdown as commands or context, these files will work.
 
 ## Sample Output
 
@@ -289,19 +316,6 @@ This is the first of several open-source compliance plugins. More at [Vyayasan](
 
 ## Roadmap
 
-KYC Analyst is the first plugin on [OpenForge.ai](https://openforge.ai) — free, open-source AI plugins for compliance teams. All MIT licensed. All inspectable.
-
-**Coming next:**
-
-| Plugin | What it does | Status |
-|--------|-------------|--------|
-| **KYC Analyst** | KYC/AML onboarding, sanctions, PEP, risk scoring | ✅ Released |
-| **Compliance Mailroom** | Gmail/Outlook monitoring, document triage, deadline tracking | 🔜 Coming soon |
-| **Questionnaire Analyst** | Security questionnaires, vendor due diligence, client assessments | 🔜 Coming soon |
-| **SAR Narrative Generator** | Suspicious Activity Report drafting (FinCEN BSA, FCA, VARA) | 🔜 Coming soon |
-| **MLRO Report Generator** | Board-ready MLRO reports with trend analysis | 🔜 Coming soon |
-| **Policy Drafter** | Draft compliance policies from regulatory text | 🔜 Coming soon |
-
 **For this plugin:**
 
 - [ ] Additional jurisdiction packs (APAC, LatAm)
@@ -370,6 +384,12 @@ Regulatory compliance requires demonstrable human oversight. Each stagegate maps
 Claude Cowork and plugins are in research preview. This plugin is experimental. One fintech has used it in a supervised pilot. Whether it is suitable for your production compliance workflow depends on your firm's risk appetite, regulatory obligations, and legal assessment. See the full Disclaimer above.
 </details>
 
+<details>
+<summary><strong>Is this locked to Claude Cowork?</strong></summary>
+
+No. The commands and skills are plain markdown files. They work in Claude Cowork (GUI), Claude Code (CLI), or any Claude client that supports loading markdown as system prompts or slash commands. The Python dependencies (fpdf2, openpyxl) are only needed for Excel and PDF generation. The core compliance workflows are pure markdown.
+</details>
+
 ## Security
 
 Found a vulnerability? Report it privately to sandi@vyayasan.com. See [SECURITY.md](./SECURITY.md) for our responsible disclosure policy.
@@ -385,3 +405,19 @@ Looking for contributors who work in compliance (any country) to add jurisdictio
 [MIT](./LICENSE)
 
 ---
+
+<p align="center">
+  <a href="https://star-history.com/#vyayasan/kyc-analyst&Date">
+    <img src="https://api.star-history.com/svg?repos=vyayasan/kyc-analyst&type=Date" alt="Star History Chart" width="600"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/vyayasan/kyc-analyst/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=vyayasan/kyc-analyst" alt="Contributors"/>
+  </a>
+</p>
+
+<p align="center">
+  <sub>Built by <a href="https://github.com/vyayasan">Vyayasan</a></sub>
+</p>

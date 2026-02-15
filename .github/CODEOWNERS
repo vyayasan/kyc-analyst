@@ -1,0 +1,14 @@
+# Default owner for everything
+* @vyayasan
+
+# Core compliance workflows
+/commands/ @vyayasan
+/skills/ @vyayasan
+
+# Output templates (locked formats)
+/OUTPUT_TEMPLATES/ @vyayasan
+
+# Plugin manifest
+/.claude-plugin/ @vyayasan
+plugin.json @vyayasan
+.mcp.json @vyayasan

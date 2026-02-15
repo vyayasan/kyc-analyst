@@ -1,0 +1,87 @@
+name: Bug Report
+description: Something isn't working as expected
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please fill out the sections below so we can reproduce and fix the issue.
+        **Never include real customer PII in bug reports.**
+
+  - type: input
+    id: command
+    attributes:
+      label: Command Used
+      description: Which command triggered the issue?
+      placeholder: "/kyc:onboard-interactive"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+      placeholder: "Describe what went wrong..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this?
+      value: |
+        1. Run command '...'
+        2. At stagegate '...'
+        3. Entered '...'
+        4. Saw error '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behaviour
+      description: What you expected to happen.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Where are you running the plugin?
+      options:
+        - Claude Cowork
+        - Claude Code (CLI)
+        - Other Claude client
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      placeholder: "macOS 15.2 / Windows 11 / Ubuntu 24.04"
+
+  - type: input
+    id: version
+    attributes:
+      label: Plugin Version
+      placeholder: "1.0.0"
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Logs
+      description: If applicable, add screenshots. **Never include real customer PII.**
+
+  - type: checkboxes
+    id: pii-check
+    attributes:
+      label: PII Check
+      options:
+        - label: I confirm this report contains no real customer data or PII
+          required: true
