@@ -5,7 +5,9 @@
 If you discover a security vulnerability in this plugin, **do NOT open a public GitHub issue.**
 
 Instead, please report it privately:
-- LinkedIn DM: [Sandipanee Samantaray](https://linkedin.com/in/sandipanee)
+- Email: sandi@vyayasan.com
+- LinkedIn DM: [Sandi S](https://linkedin.com/in/sandipanee)
+- Twitter/X: [@vyayasan](https://twitter.com/vyayasan)
 
 ### What to Include
 - Description of the vulnerability

@@ -6,7 +6,8 @@
   <a href="https://github.com/vyayasan/kyc-analyst/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="MIT License"/></a>
   <a href="https://github.com/vyayasan/kyc-analyst/releases"><img src="https://img.shields.io/badge/version-2.3.0-blue.svg" alt="Version 2.3.0"/></a>
   <a href="https://claude.ai/cowork"><img src="https://img.shields.io/badge/platform-Claude%20Cowork-black.svg" alt="Claude Cowork"/></a>
-  <a href="https://www.linkedin.com/in/sandipanee"><img src="https://img.shields.io/badge/-Follow-blue?logo=linkedin&style=flat-square" alt="LinkedIn"/></a>
+  <a href="https://www.linkedin.com/in/sandipanee"><img src="https://img.shields.io/badge/-Sandi%20S-blue?logo=linkedin&style=flat-square" alt="LinkedIn"/></a>
+  <a href="https://twitter.com/vyayasan"><img src="https://img.shields.io/twitter/follow/vyayasan" alt="Twitter"/></a>
 </p>
 
 ---

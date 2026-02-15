@@ -33,7 +33,7 @@ Violations of these compliance-specific standards will result in immediate remov
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behaviour may be reported by contacting the project maintainer at [LinkedIn](https://linkedin.com/in/sandipanee).
+Instances of abusive, harassing, or otherwise unacceptable behaviour may be reported by contacting the project maintainer at sandi@vyayasan.com or [LinkedIn](https://linkedin.com/in/sandipanee).
 
 All complaints will be reviewed and investigated promptly and fairly.
 

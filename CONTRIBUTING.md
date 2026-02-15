@@ -121,7 +121,9 @@ These aren't preferences — they're regulatory requirements.
 
 - Open a GitHub Discussion for general questions
 - Open an Issue for bugs or feature requests
-- Connect on LinkedIn: [Sandipanee Samantaray](https://linkedin.com/in/sandipanee)
+- Email: sandi@vyayasan.com
+- LinkedIn: [Sandi S](https://linkedin.com/in/sandipanee)
+- Twitter/X: [@vyayasan](https://twitter.com/vyayasan)
 
 ## License
 

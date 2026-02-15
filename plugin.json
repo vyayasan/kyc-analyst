@@ -4,7 +4,7 @@
   "description": "Fully interactive KYC/AML compliance automation with mandatory Step 0 independent verification (AMLD5 Article 10), guided Q&A workflows, automatic case folder creation, Excel dashboards, PDF reports, immutable audit trails, and practical copy-paste workflow templates. All 6 commands (onboard, onboard-interactive, refresh, screen, monitor, risk) with step-by-step guidance and HITL checkpoints.",
   "author": {
     "name": "Vyayasan",
-    "email": "contact@vyayasan.com"
+    "email": "sandi@vyayasan.com"
   },
   "homepage": "https://github.com/vyayasan/kyc-analyst",
   "repository": {

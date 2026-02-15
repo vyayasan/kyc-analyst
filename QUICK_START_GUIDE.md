@@ -273,7 +273,7 @@ KYC-20260211-ONB-JOHNSON-001/
 🔌 **Connector Setup:** See CONNECTORS.md
 📊 **Output Examples:** See EXAMPLES/ folder (coming soon)
 
-**Support:** contact@vyayasan.com
+**Support:** sandi@vyayasan.com
 **GitHub:** https://github.com/vyayasan/kyc-analyst
 
 ---
