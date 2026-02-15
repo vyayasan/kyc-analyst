@@ -1,0 +1,128 @@
+=====================================
+AUDIT TRAIL - KYC-20260215-ONB-SMITH-001
+Customer: Jane Smith
+Status: LOCKED (Case Finalized)
+=====================================
+
+[2026-02-15] CASE OPENED
+  Event: Interactive onboarding initiated
+  Actor: System
+  Details: /kyc:onboard-interactive Jane Smith
+
+[2026-02-15] STAGEGATE 1 PASSED
+  Event: Case initialized
+  Actor: Analyst
+  Details: Customer type = Individual, Jurisdiction = United Kingdom
+
+[2026-02-15] STAGEGATE 2 PASSED
+  Event: Information gathering complete
+  Actor: Analyst
+  Details: DOB 15/03/1985, British, Employed (Technology), Source of Funds: Salary, ID: Passport
+
+[2026-02-15] STAGEGATE 3 PASSED
+  Event: Case folder created
+  Actor: Analyst
+  Consent keyword: confirm
+  Details: Folder structure created at KYC_Cases/2026/02_February/Smith_Jane_20260215/
+
+[2026-02-15] STAGEGATE 4 PASSED
+  Event: Case metadata populated
+  Actor: System
+  Details: CASE_METADATA.md created with all gathered customer information
+
+[2026-02-15] STAGEGATE 5 PASSED
+  Event: Step 0 verification authorized
+  Actor: Analyst
+  Consent keyword: begin-step-0
+
+[2026-02-15] STAGEGATE 6 PASSED
+  Event: Search 1 - Adverse Media screening
+  Actor: System/Analyst
+  Consent keyword: proceed
+  Result: CLEAR
+  Details: 5 independent web search queries. No adverse media found.
+  Evidence: Evidence/News_Articles/Adverse_Media_Search_20260215.md
+
+[2026-02-15] STAGEGATE 7 PASSED
+  Event: Search 1.5 - ICIJ Offshore Leaks
+  Actor: System/Analyst
+  Consent keyword: proceed
+  Result: CLEAR
+  Details: Full name searched across Panama Papers, Paradise Papers, Pandora Papers, Offshore Leaks. Zero results.
+  Evidence: Evidence/News_Articles/ICIJ_Offshore_Leaks_Search_20260215.md
+
+[2026-02-15] STAGEGATE 8 PASSED
+  Event: Search 2 - Directorships (Companies House)
+  Actor: System/Analyst
+  Consent keyword: proceed
+  Result: CLEAR
+  Details: No directorships found matching customer profile.
+  Evidence: Evidence/Companies_House/Directorships_Search_20260215.md
+
+[2026-02-15] STAGEGATE 9 PASSED
+  Event: Search 3 - PEP Status
+  Actor: System/Analyst
+  Consent keyword: proceed
+  Result: NOT A PEP
+  Details: All PEP categories checked. Private sector technology professional confirmed.
+  Evidence: Evidence/PEP_Documents/PEP_Screening_20260215.md
+
+[2026-02-15] STAGEGATE 10 PASSED
+  Event: Search 4 - Professional Background
+  Actor: System/Analyst
+  Consent keyword: proceed
+  Result: VERIFIED
+  Details: Professional background verified via LinkedIn and employer website.
+  Evidence: Evidence/Professional_Verification/Professional_Background_20260215.md
+
+[2026-02-15] STAGEGATE 11 PASSED
+  Event: Search 5 - Sanctions/Crime screening
+  Actor: System/Analyst
+  Consent keyword: proceed
+  Result: CLEAR
+  Details: No matches across 10 databases (OFAC SDN, UK FCDO, EU, UN, INTERPOL, UK Disqualified Directors, criminal records, court records, OpenSanctions).
+  Evidence: Evidence/Sanctions_Evidence/Sanctions_Crime_Search_20260215.md
+
+[2026-02-15] STAGEGATE 12 PASSED
+  Event: All search data verified by analyst
+  Actor: Analyst
+  Consent keyword: confirm
+  Details: Consolidated search results reviewed and approved.
+
+[2026-02-15] STAGEGATE 13 PASSED
+  Event: Risk score calculated, decision approved
+  Actor: System/Analyst
+  Consent keyword: approve-decision
+  Risk Score: 12/100 (LOW band)
+  Decision: PROCEED
+  Details: Four-factor model: Geographic 3.0 + Customer 5.25 + Product 2.5 + Channel 1.5 = 12.25 (rounded to 12). Standard CDD. No escalation triggers.
+
+[2026-02-15] STAGEGATE 14 PASSED
+  Event: Escalation check - not required
+  Actor: System
+  Details: No escalation triggers identified. All 5 triggers negative.
+
+[2026-02-15] STAGEGATE 15 PASSED
+  Event: Excel dashboard generated
+  Actor: System
+  Consent keyword: generate-excel
+  Details: 4-sheet Excel workbook (Executive Summary, Directorships, Discrepancies, Risk Assessment). 0 formula errors.
+  Output: Step0_Report_JS_20260215.xlsx
+
+[2026-02-15] STAGEGATE 16 PASSED
+  Event: PDF report generated
+  Actor: System
+  Consent keyword: generate-pdf
+  Details: 6-page PDF report with 12 sections.
+  Output: Step0_Report_JS_20260215.pdf
+
+[2026-02-15] STAGEGATE 17 PASSED
+  Event: Case finalized
+  Actor: System
+  Details: QA checklist passed. All deliverables verified. Audit trail locked. Case closed.
+
+=====================================
+AUDIT TRAIL LOCKED - 2026-02-15
+All 17 stagegates completed successfully.
+No further modifications permitted.
+=====================================

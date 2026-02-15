@@ -20,6 +20,21 @@ Open-source KYC/AML compliance automation for [Claude Cowork](https://claude.ai/
 
 **[Demo Slides (PDF)](./docs/demo-slides.pdf)** — 22-page walkthrough of the full onboarding workflow and output samples.
 
+## Quickstart
+
+```bash
+git clone https://github.com/vyayasan/kyc-analyst.git
+pip install -r requirements.txt
+```
+
+Then in Claude Cowork:
+
+```
+/kyc:onboard-interactive "Jane Smith" -- UK resident, salaried employee, standard risk
+```
+
+See [QUICK_START_GUIDE.md](./QUICK_START_GUIDE.md) for a 10-minute walkthrough, or keep reading for how it works.
+
 ---
 
 ## Why This Exists
@@ -147,6 +162,39 @@ See [QUICK_START_GUIDE.md](./QUICK_START_GUIDE.md) for a full walkthrough of you
 - **Case Folder** — Numbered folder structure (001-006) with immutable audit trail
 - **Multi-jurisdiction** — UK/EU (AMLD5, MLR 2017, FCA), US (FinCEN, BSA/AML, OFAC), MENA (CBUAE, SAMA)
 
+## Sample Output
+
+See what the plugin actually produces — sanitized examples from a real onboarding run:
+
+- **[Step 0 Verification Report](./docs/sample-output/SAMPLE-Step0-Report.md)** — Full 9-section report: customer profile, 6 search results, risk scoring calculation (showing the math), escalation check, decision, and compliance certification
+- **[Audit Trail](./docs/sample-output/SAMPLE-Audit-Trail.txt)** — Immutable log of all 17 stagegates with timestamps, actors, consent keywords, and evidence references
+
+The plugin also generates a **4-sheet Excel dashboard** (.xlsx) and a **6-page formatted PDF report** (.pdf) with identical content.
+
+<details>
+<summary>Case folder structure (click to expand)</summary>
+
+```
+KYC-20260215-ONB-SMITH-001/
+├── 001_CASE_METADATA/
+│   └── CASE_METADATA.md
+├── 002_STEP_0_SEARCHES/
+│   ├── Search_1_Findings.md        (Adverse Media)
+│   ├── Search_1.5_Findings.md      (ICIJ Offshore Leaks)
+│   ├── Search_2_Findings.md        (Directorships)
+│   ├── Search_3_Findings.md        (PEP Status)
+│   ├── Search_4_Findings.md        (Professional Background)
+│   ├── Search_5_Findings.md        (Sanctions/Crime)
+│   └── STEP_0_VERIFICATION_REPORT.md
+├── 003_VERIFICATION_OUTCOMES/
+├── 004_DECISION_DOCUMENTATION/
+├── 005_ESCALATION_BRIEF/           (only if escalation triggered)
+└── 006_AUDIT_TRAIL/
+    └── AUDIT_TRAIL.md              (immutable — locked after finalization)
+```
+
+</details>
+
 ## Data Sources
 
 All free and public:
@@ -229,6 +277,30 @@ Also an active open-source builder: AI code compliance scanner for EU AI Act, PC
 
 This is the first of several open-source compliance plugins. More at [Vyayasan](https://github.com/vyayasan).
 
+## Roadmap
+
+KYC Analyst is the first plugin on [OpenForge.ai](https://openforge.ai) — free, open-source AI plugins for compliance teams. All MIT licensed. All inspectable.
+
+**Coming next:**
+
+| Plugin | What it does | Status |
+|--------|-------------|--------|
+| **KYC Analyst** | KYC/AML onboarding, sanctions, PEP, risk scoring | ✅ Released |
+| **Compliance Mailroom** | Gmail/Outlook monitoring, document triage, deadline tracking | 🔜 Coming soon |
+| **Questionnaire Analyst** | Security questionnaires, vendor due diligence, client assessments | 🔜 Coming soon |
+| **SAR Narrative Generator** | Suspicious Activity Report drafting (FinCEN BSA, FCA, VARA) | 🔜 Coming soon |
+| **MLRO Report Generator** | Board-ready MLRO reports with trend analysis | 🔜 Coming soon |
+| **Policy Drafter** | Draft compliance policies from regulatory text | 🔜 Coming soon |
+
+**For this plugin:**
+
+- [ ] Additional jurisdiction packs (APAC, LatAm)
+- [ ] Corporate structure analysis with UBO identification
+- [ ] Premium data source connectors (World-Check, LexisNexis, Dow Jones)
+- [ ] Batch processing for portfolio-level screening
+
+Have a feature request? [Open an issue](https://github.com/vyayasan/kyc-analyst/issues) or submit a PR.
+
 ## Disclaimer
 
 **This plugin is an experimental open-source tool provided "as is" under the MIT License. It is not a substitute for professional legal, regulatory, or compliance advice.**
@@ -244,6 +316,54 @@ This is the first of several open-source compliance plugins. More at [Vyayasan](
 
 **If in doubt, consult your compliance officer and legal team before deploying this or any automated tool in a production compliance workflow.**
 
+## FAQ
+
+<details>
+<summary><strong>Is this actually compliant with AMLD5 / MLR 2017?</strong></summary>
+
+This plugin implements the workflow structure described in these regulations (independent verification per Article 10, risk-based approach, ongoing monitoring). However, the plugin itself is not a regulated product and has not been certified by any regulatory authority. Your firm's MLRO and legal team should evaluate whether it meets your specific compliance obligations. The 17 stagegates exist specifically to keep a trained human in control of every decision.
+</details>
+
+<details>
+<summary><strong>Can this replace World-Check / ComplyAdvantage / LexisNexis?</strong></summary>
+
+Not directly. Those platforms provide proprietary data (enhanced PEP lists, beneficial ownership databases, watchlists). This plugin uses only free public sources (OFAC, UN, EU, UK HMT, Companies House, OpenSanctions, ICIJ). For many small teams doing standard CDD on low-to-medium risk individuals, public sources may be sufficient. For enhanced due diligence, you will likely still need premium data — the connector system supports adding those APIs.
+</details>
+
+<details>
+<summary><strong>How does it handle false positives in sanctions screening?</strong></summary>
+
+The plugin presents all potential matches to the analyst at the relevant stagegate and waits for their assessment. It does not auto-dismiss or auto-confirm matches. Common name matches, partial matches, and date-of-birth mismatches are flagged for the analyst to evaluate. The analyst's decision is recorded in the immutable audit trail.
+</details>
+
+<details>
+<summary><strong>What happens with non-English names or transliterated names?</strong></summary>
+
+The plugin searches using the name as provided plus any declared aliases. For transliterated names, the analyst should add all known romanizations as aliases in the initial information-gathering stage. The OFAC SDN list includes alternate spellings, and OpenSanctions handles transliteration variants. However, this is a known limitation — comprehensive multilingual name matching requires specialized tooling.
+</details>
+
+<details>
+<summary><strong>Is the risk model validated?</strong></summary>
+
+The four-factor model uses published regulatory guidance (FATF, EBA, FinCEN) for its weight structure. It is deterministic — same inputs always produce the same score. It has not been independently validated or back-tested against a large dataset. Your firm should calibrate the weights and thresholds to match your risk appetite. The model is transparent (you can see the exact calculation in every report) and can be modified in `skills/risk-assessment/SKILL.md`.
+</details>
+
+<details>
+<summary><strong>Why 17 stagegates? Isn't that slow?</strong></summary>
+
+Regulatory compliance requires demonstrable human oversight. Each stagegate maps to a specific regulatory requirement (data verification, search authorization, evidence review, risk approval, escalation check, report generation). In practice, most gates take seconds to pass — the analyst reviews the presented evidence and types a keyword like `proceed` or `confirm`. The pilot showed 27 minutes end-to-end for a standard case, including all 17 gates.
+</details>
+
+<details>
+<summary><strong>Can I use this in production?</strong></summary>
+
+Claude Cowork and plugins are in research preview. This plugin is experimental. One fintech has used it in a supervised pilot. Whether it is suitable for your production compliance workflow depends on your firm's risk appetite, regulatory obligations, and legal assessment. See the full Disclaimer above.
+</details>
+
+## Security
+
+Found a vulnerability? Report it privately to sandi@vyayasan.com. See [SECURITY.md](./SECURITY.md) for our responsible disclosure policy.
+
 ## Contributing
 
 Plugins are just markdown files. Fork the repo, make your changes, and submit a PR. See [CONTRIBUTING.md](./CONTRIBUTING.md) for details on testing, stagegate rules, and jurisdiction support.
@@ -253,3 +373,21 @@ Looking for contributors who work in compliance (any country) to add jurisdictio
 ## License
 
 [MIT](./LICENSE)
+
+---
+
+<p align="center">
+  <a href="https://star-history.com/#vyayasan/kyc-analyst&Date">
+    <img src="https://api.star-history.com/svg?repos=vyayasan/kyc-analyst&type=Date" alt="Star History Chart" width="600"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/vyayasan/kyc-analyst/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=vyayasan/kyc-analyst" alt="Contributors"/>
+  </a>
+</p>
+
+<p align="center">
+  <sub>Software free. Expertise paid. — <a href="https://openforge.ai">OpenForge.ai</a></sub>
+</p>
