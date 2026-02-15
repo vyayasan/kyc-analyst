@@ -1,0 +1,48 @@
+<svg width="900" height="200" viewBox="0 0 900 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="200" rx="12" fill="#0F0F10"/>
+  <rect x="1" y="1" width="898" height="198" rx="11" stroke="#2A2A2D" stroke-width="1"/>
+
+  <!-- Decorative geometric elements -->
+  <circle cx="60" cy="100" r="40" stroke="#10A37F" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="60" cy="100" r="24" stroke="#10A37F" stroke-width="1" opacity="0.2"/>
+  <circle cx="60" cy="100" r="8" fill="#10A37F" opacity="0.6"/>
+
+  <!-- Dotted grid decoration -->
+  <g opacity="0.15">
+    <circle cx="820" cy="40" r="1.5" fill="#10A37F"/>
+    <circle cx="840" cy="40" r="1.5" fill="#10A37F"/>
+    <circle cx="860" cy="40" r="1.5" fill="#10A37F"/>
+    <circle cx="820" cy="60" r="1.5" fill="#10A37F"/>
+    <circle cx="840" cy="60" r="1.5" fill="#10A37F"/>
+    <circle cx="860" cy="60" r="1.5" fill="#10A37F"/>
+    <circle cx="820" cy="80" r="1.5" fill="#10A37F"/>
+    <circle cx="840" cy="80" r="1.5" fill="#10A37F"/>
+    <circle cx="860" cy="80" r="1.5" fill="#10A37F"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="130" y="85" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="700" fill="#FFFFFF">KYC Analyst</text>
+
+  <!-- Subtitle -->
+  <text x="130" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400" fill="#9CA3AF">Open-source KYC/AML compliance automation for Claude</text>
+
+  <!-- Tags -->
+  <rect x="130" y="140" width="100" height="26" rx="13" fill="#10A37F" opacity="0.15"/>
+  <text x="152" y="158" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#10A37F">17 Stagegates</text>
+
+  <rect x="242" y="140" width="80" height="26" rx="13" fill="#10A37F" opacity="0.15"/>
+  <text x="257" y="158" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#10A37F">MIT License</text>
+
+  <rect x="334" y="140" width="95" height="26" rx="13" fill="#10A37F" opacity="0.15"/>
+  <text x="351" y="158" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#10A37F">Free Data Only</text>
+
+  <rect x="441" y="140" width="105" height="26" rx="13" fill="#10A37F" opacity="0.15"/>
+  <text x="455" y="158" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#10A37F">Human-in-Loop</text>
+
+  <!-- Version pill -->
+  <rect x="780" y="140" width="60" height="26" rx="13" fill="#1A1A1D" stroke="#2A2A2D" stroke-width="1"/>
+  <text x="794" y="158" font-family="system-ui, -apple-system, monospace" font-size="11" font-weight="500" fill="#6B7280">v2.3.0</text>
+
+  <!-- Vyayasan attribution -->
+  <text x="790" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="400" fill="#4B5563">by Vyayasan</text>
+</svg>
