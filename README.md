@@ -63,6 +63,14 @@ These numbers reflect one team's experience with one type of case. Enhanced due 
 
 ## How It Works
 
+<p align="center">
+  <img src="docs/kyc-analyst-workflow.svg" alt="KYC Analyst 17-Stagegate Workflow" width="900"/>
+</p>
+
+<p align="center">
+  <sub><a href="docs/kyc-analyst-workflow.excalidraw">Open in Excalidraw</a> · Editable source file included in repo</sub>
+</p>
+
 ```
 Customer docs ──> Claude extracts ──> Analyst verifies
                                            │
@@ -250,7 +258,9 @@ kyc-analyst/
 │   ├── 4-Escalation-Case/
 │   └── 5-Refresh-Case/
 ├── OUTPUT_TEMPLATES/            # Locked PDF, Excel, and case folder formats
-├── docs/                        # Demo slides and assets
+├── docs/                        # Workflow diagram, demo slides, sample output
+│   ├── kyc-analyst-workflow.svg #   17-stagegate workflow diagram (rendered in README)
+│   ├── kyc-analyst-workflow.excalidraw  # Editable source (open at excalidraw.com)
 ├── WORKFLOW_TEMPLATES.md        # Copy-paste templates for 5 scenarios
 ├── QUICK_START_GUIDE.md         # 10-minute first case walkthrough
 ├── CONNECTORS.md                # Tool integration guide

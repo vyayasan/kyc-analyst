@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 540" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto-start-auto">
+      <path d="M 0 0 L 10 3.5 L 0 7 z" fill="#495057"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="540" fill="#ffffff" rx="8"/>
+
+  <!-- Title -->
+  <text x="550" y="38" text-anchor="middle" font-size="28" font-weight="700" fill="#1e1e1e">KYC Analyst — 17-Stagegate Workflow</text>
+  <text x="550" y="62" text-anchor="middle" font-size="16" fill="#868e96">Human-in-the-loop at every decision point</text>
+
+  <!-- Row 1: S0 → S1 → S2 → S3 → S4 (left to right) -->
+
+  <!-- S0: Customer Onboard (grey - start) -->
+  <rect x="30" y="100" width="160" height="70" rx="8" fill="#f1f3f5" stroke="#868e96" stroke-width="2"/>
+  <text x="110" y="128" text-anchor="middle" font-size="12" font-weight="600" fill="#495057">S0</text>
+  <text x="110" y="148" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Customer</text>
+  <text x="110" y="164" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Onboard</text>
+
+  <!-- Arrow S0→S1 -->
+  <line x1="194" y1="135" x2="238" y2="135" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- S1: Consent Gate (orange dashed - HITL) -->
+  <rect x="242" y="100" width="160" height="70" rx="8" fill="#fff9db" stroke="#e67700" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="322" y="124" text-anchor="middle" font-size="12" font-weight="600" fill="#e67700">S1 · HITL</text>
+  <text x="322" y="148" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Consent</text>
+  <text x="322" y="164" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Gate</text>
+
+  <!-- Arrow S1→S2 -->
+  <line x1="406" y1="135" x2="450" y2="135" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- S2: Step 0 Searches (blue - search) -->
+  <rect x="454" y="100" width="160" height="70" rx="8" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+  <text x="534" y="128" text-anchor="middle" font-size="12" font-weight="600" fill="#1971c2">S2</text>
+  <text x="534" y="148" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Step 0</text>
+  <text x="534" y="164" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Searches</text>
+
+  <!-- Arrow S2→S3 -->
+  <line x1="618" y1="135" x2="662" y2="135" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- S3: Companies House (blue - search) -->
+  <rect x="666" y="100" width="160" height="70" rx="8" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+  <text x="746" y="128" text-anchor="middle" font-size="12" font-weight="600" fill="#1971c2">S3</text>
+  <text x="746" y="148" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Companies</text>
+  <text x="746" y="164" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">House</text>
+
+  <!-- Arrow S3→S4 -->
+  <line x1="830" y1="135" x2="874" y2="135" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- S4: Sanctions Check (blue - search) -->
+  <rect x="878" y="100" width="160" height="70" rx="8" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+  <text x="958" y="128" text-anchor="middle" font-size="12" font-weight="600" fill="#1971c2">S4</text>
+  <text x="958" y="148" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Sanctions</text>
+  <text x="958" y="164" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Check</text>
+
+  <!-- Arrow S4→S5 (down) -->
+  <line x1="958" y1="174" x2="958" y2="228" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Row 2: S5 ← S6 ← S7 ← S8 ← S9 (right to left) -->
+
+  <!-- S5: PEP Screening (blue - search) -->
+  <rect x="878" y="232" width="160" height="70" rx="8" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+  <text x="958" y="260" text-anchor="middle" font-size="12" font-weight="600" fill="#1971c2">S5</text>
+  <text x="958" y="280" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">PEP</text>
+  <text x="958" y="296" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Screening</text>
+
+  <!-- Arrow S5→S6 (right to left) -->
+  <line x1="874" y1="267" x2="830" y2="267" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- S6: Adverse Media (blue - search) -->
+  <rect x="666" y="232" width="160" height="70" rx="8" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+  <text x="746" y="260" text-anchor="middle" font-size="12" font-weight="600" fill="#1971c2">S6</text>
+  <text x="746" y="280" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Adverse</text>
+  <text x="746" y="296" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Media</text>
+
+  <!-- Arrow S6→S7 (right to left) -->
+  <line x1="662" y1="267" x2="618" y2="267" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- S7: HITL Verify (orange dashed - HITL) -->
+  <rect x="454" y="232" width="160" height="70" rx="8" fill="#fff9db" stroke="#e67700" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="534" y="256" text-anchor="middle" font-size="12" font-weight="600" fill="#e67700">S7 · HITL</text>
+  <text x="534" y="280" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Verify</text>
+  <text x="534" y="296" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Findings</text>
+
+  <!-- Arrow S7→S8 (right to left) -->
+  <line x1="450" y1="267" x2="406" y2="267" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- S8: Risk Scoring (blue - search/process) -->
+  <rect x="242" y="232" width="160" height="70" rx="8" fill="#d0ebff" stroke="#1971c2" stroke-width="2"/>
+  <text x="322" y="260" text-anchor="middle" font-size="12" font-weight="600" fill="#1971c2">S8</text>
+  <text x="322" y="280" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Risk</text>
+  <text x="322" y="296" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Scoring</text>
+
+  <!-- Arrow S8→S9 (right to left) -->
+  <line x1="238" y1="267" x2="194" y2="267" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- S9: Decision Gate (orange dashed - HITL) -->
+  <rect x="30" y="232" width="160" height="70" rx="8" fill="#fff9db" stroke="#e67700" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="110" y="256" text-anchor="middle" font-size="12" font-weight="600" fill="#e67700">S9 · HITL</text>
+  <text x="110" y="280" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Decision</text>
+  <text x="110" y="296" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Gate</text>
+
+  <!-- Arrow S9→S10 (down) -->
+  <line x1="110" y1="306" x2="110" y2="360" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Row 3: S10 → S11 → S12 (left to right) -->
+
+  <!-- S10: Excel Dashboard (green - output) -->
+  <rect x="30" y="364" width="160" height="70" rx="8" fill="#d3f9d8" stroke="#2f9e44" stroke-width="2"/>
+  <text x="110" y="392" text-anchor="middle" font-size="12" font-weight="600" fill="#2f9e44">S10</text>
+  <text x="110" y="412" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Excel</text>
+  <text x="110" y="428" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Dashboard</text>
+
+  <!-- Arrow S10→S11 -->
+  <line x1="194" y1="399" x2="238" y2="399" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- S11: PDF Report (green - output) -->
+  <rect x="242" y="364" width="160" height="70" rx="8" fill="#d3f9d8" stroke="#2f9e44" stroke-width="2"/>
+  <text x="322" y="392" text-anchor="middle" font-size="12" font-weight="600" fill="#2f9e44">S11</text>
+  <text x="322" y="412" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">PDF</text>
+  <text x="322" y="428" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Report</text>
+
+  <!-- Arrow S11→S12 -->
+  <line x1="406" y1="399" x2="450" y2="399" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- S12: Case Complete (grey - end) -->
+  <rect x="454" y="364" width="160" height="70" rx="8" fill="#f1f3f5" stroke="#868e96" stroke-width="2"/>
+  <text x="534" y="392" text-anchor="middle" font-size="12" font-weight="600" fill="#495057">S12</text>
+  <text x="534" y="412" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Case</text>
+  <text x="534" y="428" text-anchor="middle" font-size="14" font-weight="500" fill="#1e1e1e">Complete</text>
+
+  <!-- Legend box -->
+  <rect x="700" y="355" width="350" height="130" rx="8" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="720" y="378" font-size="14" font-weight="600" fill="#1e1e1e">Legend</text>
+
+  <!-- Legend: Start/End -->
+  <rect x="720" y="390" width="24" height="16" rx="4" fill="#f1f3f5" stroke="#868e96" stroke-width="1.5"/>
+  <text x="752" y="403" font-size="13" fill="#495057">Start / End</text>
+
+  <!-- Legend: HITL Gate -->
+  <rect x="720" y="414" width="24" height="16" rx="4" fill="#fff9db" stroke="#e67700" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="752" y="427" font-size="13" fill="#495057">HITL Gate (human approval)</text>
+
+  <!-- Legend: Search -->
+  <rect x="720" y="438" width="24" height="16" rx="4" fill="#d0ebff" stroke="#1971c2" stroke-width="1.5"/>
+  <text x="752" y="451" font-size="13" fill="#495057">Search / Process</text>
+
+  <!-- Legend: Output -->
+  <rect x="720" y="462" width="24" height="16" rx="4" fill="#d3f9d8" stroke="#2f9e44" stroke-width="1.5"/>
+  <text x="752" y="475" font-size="13" fill="#495057">Output</text>
+
+  <!-- Footer -->
+  <text x="550" y="520" text-anchor="middle" font-size="12" fill="#adb5bd">Every gate requires explicit analyst consent. Zero auto-approvals.</text>
+</svg>
