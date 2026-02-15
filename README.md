@@ -385,19 +385,3 @@ Looking for contributors who work in compliance (any country) to add jurisdictio
 [MIT](./LICENSE)
 
 ---
-
-<p align="center">
-  <a href="https://star-history.com/#vyayasan/kyc-analyst&Date">
-    <img src="https://api.star-history.com/svg?repos=vyayasan/kyc-analyst&type=Date" alt="Star History Chart" width="600"/>
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/vyayasan/kyc-analyst/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=vyayasan/kyc-analyst" alt="Contributors"/>
-  </a>
-</p>
-
-<p align="center">
-  <sub>Software free. Expertise paid. — <a href="https://openforge.ai">OpenForge.ai</a></sub>
-</p>
