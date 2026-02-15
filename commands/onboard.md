@@ -63,7 +63,7 @@ Example: /kyc-analyst:onboard Joanne Dewar UK
 
 ```
 ========================================
-KYC ANALYST v2.3.0 - ONBOARDING WORKFLOW
+KYC ANALYST v1.0.0 - ONBOARDING WORKFLOW
 ========================================
 
 Customer: $ARGUMENTS
@@ -1039,7 +1039,7 @@ Excel report generation
 
 ---
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Author:** Vyayasan
 
 ---

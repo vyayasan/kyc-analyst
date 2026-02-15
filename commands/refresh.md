@@ -38,5 +38,5 @@ Periodic customer review with independent verification searches to ensure ongoin
 
 ---
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Author:** Vyayasan

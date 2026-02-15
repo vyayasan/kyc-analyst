@@ -57,5 +57,5 @@ All matches (even likely false positives) require analyst review and sign-off be
 
 ---
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Author:** Vyayasan

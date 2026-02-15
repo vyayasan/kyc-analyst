@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/vyayasan/kyc-analyst/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="MIT License"/></a>
-  <a href="https://github.com/vyayasan/kyc-analyst/releases"><img src="https://img.shields.io/badge/version-2.3.0-blue.svg" alt="Version 2.3.0"/></a>
+  <a href="https://github.com/vyayasan/kyc-analyst/releases"><img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version 1.0.0"/></a>
   <a href="https://claude.ai/cowork"><img src="https://img.shields.io/badge/platform-Claude%20Cowork-black.svg" alt="Claude Cowork"/></a>
   <a href="https://www.linkedin.com/in/sandipanee"><img src="https://img.shields.io/badge/-Sandi%20S-blue?logo=linkedin&style=flat-square" alt="LinkedIn"/></a>
   <a href="https://twitter.com/vyayasan"><img src="https://img.shields.io/twitter/follow/vyayasan" alt="Twitter"/></a>
@@ -12,59 +12,98 @@
 
 ---
 
-Open-source KYC/AML compliance automation that replaces platforms costing teams tens of thousands per year. Uses only free public data sources. 17 mandatory human-in-the-loop checkpoints -- AI assists, the analyst decides.
+Your compliance team deserves better tools.
 
-Built for [Claude Cowork](https://claude.ai/cowork), also compatible with [Claude Code](https://claude.ai/code).
+Open-source KYC/AML compliance automation for [Claude Cowork](https://claude.ai/cowork). Uses only free public data sources. 17 mandatory human-in-the-loop checkpoints — AI assists, the analyst decides.
 
-**[Demo Slides (PDF)](./docs/demo-slides.pdf)** -- 22-page walkthrough of the full onboarding workflow and output samples.
+> **Note:** Claude Cowork and plugins are currently in research preview. This plugin is an experimental open-source project and should be evaluated accordingly. See [Disclaimer](#disclaimer) below.
+
+**[Demo Slides (PDF)](./docs/demo-slides.pdf)** — 22-page walkthrough of the full onboarding workflow and output samples.
 
 ---
 
 ## Why This Exists
 
-Compliance analysts spend most of their time navigating public websites, screening free databases, and writing reports. The underlying data sources (OFAC, UN, EU sanctions lists, Companies House, OpenSanctions) are all free. The risk formulas (MLR 2017, FinCEN CDD) are published.
+Compliance analysts at small teams spend most of their time on tasks that shouldn't require expensive platforms: navigating public websites, screening free databases, calculating risk scores using published formulas, and writing reports.
 
-This plugin orchestrates all of that while enforcing 17 mandatory human-in-the-loop checkpoints. No auto-approvals. No skipping. The analyst stays in control.
+The underlying data sources — OFAC, UN, EU sanctions lists, Companies House, OpenSanctions — are all free. The risk formulas (MLR 2017, FinCEN CDD) are publicly documented. The workflows are well-understood.
 
-## Pilot Results
+Yet teams pay tens of thousands per year for platforms that essentially orchestrate access to these free resources.
 
-One UK fintech ran this plugin for 30 days with 12 compliance analysts:
+This plugin does the same orchestration while enforcing 17 mandatory human-in-the-loop checkpoints. No auto-approvals. No skipping. The analyst stays in control of every decision.
 
-| Metric | Before | After |
-|--------|--------|-------|
-| Time per case | 95 min | 27 min |
-| Annual cost | Platform vendor | Claude Pro subscription |
-| Legal review | -- | Approved for production |
-| Outcome | -- | Vendor cancelled |
+## Early Results
+
+> **Caveat:** These are early-stage results from a single pilot. They are not guaranteed, not independently audited, and may not be representative of all compliance environments. Your results will vary depending on case complexity, team experience, jurisdiction, and workflow configuration.
+
+One UK fintech ran this plugin for 30 days with a team of 5 compliance analysts on standard-risk individual onboarding cases:
+
+| Metric | Before | After | Notes |
+|--------|--------|-------|-------|
+| Time per case | ~95 min | ~27 min | Standard individual cases only |
+| Tooling cost | Annual platform subscription | Claude Pro subscription | Does not include analyst time or overhead |
+| Legal review | — | Approved for pilot use | Firm-specific legal assessment |
+
+These numbers reflect one team's experience with one type of case. Enhanced due diligence, complex corporate structures, and multi-jurisdiction cases will take longer.
 
 ## How It Works
 
 ```
-Customer docs --> Claude extracts --> Analyst verifies
-                                          |
-                                    [STAGEGATE 1-5]
-                                          |
-Step 0: 6 mandatory searches --------> Analyst reviews each
-  - Adverse media (72+ sources)           |
-  - ICIJ Offshore Leaks              [STAGEGATE 6-12]
-  - Directorships (Companies House)       |
-  - PEP status (5 databases)             |
-  - Professional background               |
-  - Sanctions (OFAC/UN/EU/UK)             |
-                                          v
-Risk scoring (deterministic) --------> Analyst approves
-  - Geographic 30%                        |
-  - Customer 35%                    [STAGEGATE 13-14]
-  - Product 25%                           |
-  - Channel 10%                           v
-                                    PROCEED or ESCALATE
-                                          |
-                                    [STAGEGATE 15-17]
-                                          |
-                                    Excel + PDF + Case Folder
+Customer docs ──> Claude extracts ──> Analyst verifies
+                                           │
+                                     [STAGEGATE 1-5]
+                                           │
+Step 0: 6 mandatory searches ────────> Analyst reviews each
+  • Adverse media (72+ sources)            │
+  • ICIJ Offshore Leaks               [STAGEGATE 6-12]
+  • Directorships (Companies House)        │
+  • PEP status (5 databases)              │
+  • Professional background                │
+  • Sanctions (OFAC/UN/EU/UK)              │
+                                           ▼
+Risk scoring (deterministic) ────────> Analyst approves
+  • Geographic  30%                        │
+  • Customer    35%              [STAGEGATE 13-14]
+  • Product     25%                        │
+  • Channel     10%                        ▼
+                                     PROCEED or ESCALATE
+                                           │
+                                     [STAGEGATE 15-17]
+                                           │
+                                     Excel + PDF + Case Folder
 ```
 
-Every arrow with `[STAGEGATE]` requires explicit analyst consent. 17 total.
+Every `[STAGEGATE]` requires explicit analyst consent before proceeding. 17 total. Zero auto-approvals.
+
+### Risk Scoring Model
+
+Deterministic four-factor weighted model. Same inputs always produce the same score. No ML, no black boxes.
+
+| Factor | Weight | Inputs |
+|--------|--------|--------|
+| Geographic | 30% | Country of residence, nationality, transaction corridors |
+| Customer | 35% | Customer type, occupation, source of wealth, PEP status |
+| Product | 25% | Product type, transaction limits, delivery channel |
+| Channel | 10% | Onboarding method, face-to-face vs remote |
+
+| Band | Score | Action |
+|------|-------|--------|
+| LOW | 0–20 | Standard CDD |
+| MEDIUM | 21–60 | Enhanced monitoring |
+| HIGH | 61–80 | Enhanced Due Diligence (EDD) |
+| CRITICAL | 81–100 | Senior management review or decline |
+
+### Stagegate Architecture
+
+Stagegates are the enforcement mechanism. Each gate follows a strict pattern:
+
+```
+GATE ──> PRESENT evidence ──> WAIT for analyst ──> PROCEED only on explicit consent
+```
+
+The plugin will **not** proceed on silence. If the analyst doesn't respond, the workflow pauses indefinitely. This is by design — regulatory compliance requires affirmative human decisions, not timeouts or defaults.
+
+HITL trigger keywords: `ready`, `continue`, `begin-step-0`, `proceed`, `confirm`, `compile-report`, `approve-decision`, `generate-excel`, `generate-pdf`
 
 ## Commands
 
@@ -101,12 +140,12 @@ See [QUICK_START_GUIDE.md](./QUICK_START_GUIDE.md) for a full walkthrough of you
 
 ## What You Get
 
-- **Step 0 Independent Verification** -- 6 mandatory searches across 90+ sources before any due diligence begins
-- **Deterministic Risk Scoring** -- Four-factor weighted model with published formulas. Same inputs always produce the same score.
-- **Excel Dashboard** -- 4-sheet workbook (Executive Summary, Directorships, Discrepancies, Risk Assessment) via openpyxl
-- **PDF Report** -- 17-section compliance report via fpdf2
-- **Case Folder** -- Numbered folder structure (001-006) with immutable audit trail
-- **Multi-jurisdiction** -- UK/EU (AMLD5, MLR 2017, FCA), US (FinCEN, BSA/AML, OFAC), MENA (CBUAE, SAMA)
+- **Step 0 Independent Verification** — 6 mandatory searches across 90+ sources before any due diligence begins
+- **Deterministic Risk Scoring** — Four-factor weighted model with published formulas. Same inputs always produce the same score.
+- **Excel Dashboard** — 4-sheet workbook (Executive Summary, Directorships, Discrepancies, Risk Assessment) via openpyxl
+- **PDF Report** — 17-section compliance report via fpdf2
+- **Case Folder** — Numbered folder structure (001-006) with immutable audit trail
+- **Multi-jurisdiction** — UK/EU (AMLD5, MLR 2017, FCA), US (FinCEN, BSA/AML, OFAC), MENA (CBUAE, SAMA)
 
 ## Data Sources
 
@@ -129,41 +168,81 @@ For premium sources (World-Check, LexisNexis, Dow Jones), add your own API keys 
 
 Five ready-to-use templates in [WORKFLOW_TEMPLATES.md](./WORKFLOW_TEMPLATES.md):
 
-| Template | Use case | Time |
+| Template | Use case | Estimated time |
 |----------|----------|------|
-| Template 1 | Salaried employee, standard risk | 15-20 min |
-| Template 2 | HNWI, enhanced due diligence | 45-60 min |
-| Template 3 | SME corporate onboarding | 30-40 min |
-| Template 4 | Complex corporate, multi-jurisdiction | 60-90 min |
-| Template 5 | Existing customer refresh | 20-30 min |
+| Template 1 | Salaried employee, standard risk | 15–20 min |
+| Template 2 | HNWI, enhanced due diligence | 45–60 min |
+| Template 3 | SME corporate onboarding | 30–40 min |
+| Template 4 | Complex corporate, multi-jurisdiction | 60–90 min |
+| Template 5 | Existing customer refresh | 20–30 min |
 
 ## Plugin Architecture
 
-- **Skills** -- Domain knowledge for onboarding, screening, risk assessment, transaction monitoring, and KYC refresh. Each skill defines mandatory stagegates that Claude follows automatically.
-- **Commands** -- Six slash commands you invoke explicitly. Each one maps to a regulatory workflow.
-- **Connectors** -- Tool-agnostic `~~placeholder` syntax that works with Google Drive, Box, Salesforce, Chrome, Slack, and others. Edit `.mcp.json` to point at your specific tool stack.
-- **Stagegates** -- 17 mandatory checkpoints requiring explicit analyst consent. No auto-approvals, no skipping, no proceeding on silence.
-
 ```
 kyc-analyst/
-├── .claude-plugin/plugin.json   # Manifest
-├── .mcp.json                    # Tool connections
-├── commands/                    # Slash commands you invoke explicitly
+├── .claude-plugin/plugin.json   # Plugin manifest
+├── .mcp.json                    # Tool connections (connectors)
+├── commands/                    # 6 slash commands mapped to regulatory workflows
+│   ├── onboard.md               #   Full onboarding (1,047 lines, 17 stagegates)
+│   ├── onboard-interactive.md   #   Interactive dialog mode
+│   ├── screen.md                #   Sanctions + PEP screening
+│   ├── risk.md                  #   Risk reassessment
+│   ├── monitor.md               #   Transaction monitoring
+│   └── refresh.md               #   Periodic review
 ├── skills/                      # Domain knowledge Claude draws on automatically
-├── EXAMPLES/                    # Five worked examples with expected outputs
-├── OUTPUT_TEMPLATES/            # Locked PDF and case folder formats
+│   ├── onboarding/SKILL.md      #   Core onboarding logic + stagegates
+│   ├── screening/SKILL.md       #   Sanctions + PEP screening logic
+│   ├── risk-assessment/SKILL.md #   Deterministic risk scoring model
+│   ├── monitoring/SKILL.md      #   Transaction monitoring patterns
+│   └── refresh/SKILL.md         #   Periodic review triggers + logic
+├── EXAMPLES/                    # 5 worked examples with expected outputs
+│   ├── 1-Individual-Basic/
+│   ├── 2-HNWI-EDD/
+│   ├── 3-SME-Company/
+│   ├── 4-Escalation-Case/
+│   └── 5-Refresh-Case/
+├── OUTPUT_TEMPLATES/            # Locked PDF, Excel, and case folder formats
 ├── docs/                        # Demo slides and assets
-├── WORKFLOW_TEMPLATES.md        # Copy-paste workflow templates
+├── WORKFLOW_TEMPLATES.md        # Copy-paste templates for 5 scenarios
 ├── QUICK_START_GUIDE.md         # 10-minute first case walkthrough
 ├── CONNECTORS.md                # Tool integration guide
+├── MCP_INTEGRATION_GUIDE.md     # Detailed MCP tool usage patterns
 └── requirements.txt             # Python dependencies (fpdf2, openpyxl)
 ```
 
+### How the pieces connect
+
+- **Skills** — Domain knowledge for onboarding, screening, risk assessment, transaction monitoring, and KYC refresh. Each skill defines mandatory stagegates that Claude follows automatically.
+- **Commands** — Six slash commands you invoke explicitly. Each one maps to a regulatory workflow.
+- **Connectors** — Tool-agnostic `~~placeholder` syntax that works with Google Drive, Box, Salesforce, Chrome, Slack, and others. Edit `.mcp.json` to point at your specific tool stack.
+- **Stagegates** — 17 mandatory checkpoints requiring explicit analyst consent. No auto-approvals, no skipping, no proceeding on silence.
+
 ## Background
 
-Built by a product leader who spent a decade shipping fintech and compliance products -- VP Product at Thredd (100+ fintechs, 47 countries), CPO/Co-Founder at ComplyStream (Google AI First Accelerator, 1 of 16 from 500+ applicants). Small compliance teams (1-20 analysts) were paying significant amounts annually for platforms that navigate public websites, screen free data sources, calculate risk scores using open formulas, and generate reports. Foundation models can do all of this.
+Built by [Vyayasan](https://github.com/vyayasan) — a product leader who has spent over a decade building fintech and compliance products at scale.
 
-Not building a company. Testing a thesis: foundation models commoditized GRC middleware for SMB compliance teams.
+Previous work includes: co-founding an AI-powered financial crime compliance startup (selected for Google's inaugural AI First Accelerator — 1 of 16 UK startups from 500+ applicants, NVIDIA Inception member, pre-seed backed by institutional VCs with participation from executives at leading neobanks and cross-border payment companies), leading product at a global payment processor (100+ fintech clients, 47 countries, ML-based financial crime detection), and building the enterprise AI function at a UK specialist bank (Trust Layer architecture, human-in-the-loop workflows, FCA/PRA compliance).
+
+Also an active open-source builder: AI code compliance scanner for EU AI Act, PCI DSS, and GDPR; API documentation transformer; contributor to AI Tinkerers community; speaker at Money20/20 Europe.
+
+**The thesis:** foundation models have commoditized the integration layer that compliance platforms charge for. The data is free. The formulas are published. The workflows are well-understood. What remains valuable is domain expertise and human judgment — and those should be in the hands of analysts, not locked behind vendor subscriptions.
+
+This is the first of several open-source compliance plugins. More at [Vyayasan](https://github.com/vyayasan).
+
+## Disclaimer
+
+**This plugin is an experimental open-source tool provided "as is" under the MIT License. It is not a substitute for professional legal, regulatory, or compliance advice.**
+
+- **Not a regulated product.** This plugin is not a licensed compliance platform, not a regulated service, and not approved or endorsed by any regulatory authority (FCA, FinCEN, or otherwise).
+- **Research preview platform.** Claude Cowork and Claude plugins are currently in research preview by Anthropic. Features, availability, and behavior may change without notice.
+- **No guarantees of accuracy.** While this plugin queries public data sources, it cannot guarantee the accuracy, completeness, or timeliness of results. All outputs must be independently verified by a qualified compliance professional.
+- **Human judgment required.** The 17 stagegates exist because AI cannot and should not make compliance decisions autonomously. Every decision in this workflow requires a trained analyst's review and approval.
+- **Not legal advice.** Nothing in this plugin constitutes legal or regulatory advice. Consult qualified legal counsel for your jurisdiction.
+- **Your responsibility.** Users are solely responsible for ensuring that their use of this plugin complies with applicable laws, regulations, and their firm's internal policies. The author accepts no liability for regulatory actions, fines, or losses arising from use of this tool.
+- **Data source limitations.** Public data sources (OFAC, UN, Companies House, etc.) may have latency, gaps, or errors. Premium sources are not included. Screening results from this tool should supplement — not replace — your existing compliance infrastructure.
+- **Pilot results are illustrative.** The early results reported above are from a single unaudited pilot and should not be treated as benchmarks or guarantees.
+
+**If in doubt, consult your compliance officer and legal team before deploying this or any automated tool in a production compliance workflow.**
 
 ## Contributing
 

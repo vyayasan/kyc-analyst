@@ -8,7 +8,7 @@ category: compliance
 estimated-duration: 15 minutes
 ---
 
-# Screening Skill - v2.3.0
+# Screening Skill - v1.0.0
 
 Comprehensive sanctions and PEP screening with multi-database search, false positive assessment, and HITL decision gates.
 
@@ -97,5 +97,5 @@ Create Excel report with all analyses.
 
 ---
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Author:** Vyayasan

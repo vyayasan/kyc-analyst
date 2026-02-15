@@ -335,7 +335,7 @@ None identified in this case
 - **POCA 2002** (Proceeds of Crime Act)
 
 ### Step 0 Mandatory Verification
-Per KYC Analyst v2.2.0 specifications, all onboardings require:
+Per KYC Analyst v1.0.0 specifications, all onboardings require:
 1. Adverse Media Search (72+ sources)
 2. Directorship Verification (registries)
 3. PEP Status Screening (5 databases)

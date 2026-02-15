@@ -1,4 +1,4 @@
-# KYC Analyst v2.3.0 - Quick Start Guide
+# KYC Analyst v1.0.0 - Quick Start Guide
 
 **Complete your first KYC case in 10 minutes**
 
@@ -220,7 +220,7 @@ KYC-20260211-ONB-JOHNSON-001/
 **A:** Claude provides escalation brief automatically. Send to Manager + MLRO.
 
 ### Q: Can I customize the searches?
-**A:** Step 0 searches are mandatory per v2.2.0. Additional searches can be added after.
+**A:** Step 0 searches are mandatory. Additional searches can be added after.
 
 ### Q: What if customer has no LinkedIn?
 **A:** Document as "No LinkedIn presence found" and use alternative verification (company website, trade publications).
@@ -284,6 +284,6 @@ For your next case, it'll be even faster (5-10 minutes) as you're now familiar w
 
 ---
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Author:** Vyayasan
 **Last Updated:** February 2026

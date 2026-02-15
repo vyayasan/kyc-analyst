@@ -10,7 +10,7 @@ category: compliance
 estimated-duration: 45 minutes
 ---
 
-# Customer Refresh Skill - v2.3.0
+# Customer Refresh Skill - v1.0.0
 
 Periodic customer review with independent re-verification to maintain ongoing due diligence compliance and detect material changes.
 
@@ -322,7 +322,7 @@ Ensures consistent documentation and audit trail compliance.
 
 ---
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Last Updated:** 2026-02-12
 **Author:** Vyayasan
 **Regulated:** AMLD5 (UK/EU), FinCEN CDD Rule (US), UACB/SAMA (MENA)

@@ -2,66 +2,36 @@
 
 All notable changes to the KYC Analyst plugin are documented here.
 
-## [2.3.0] - 2026-02-12 (Current Release)
+Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-### Added
-- MCP Integration Guide for Claude in Chrome, fpdf2, openpyxl
-- Connector flexibility system (`~~placeholder` syntax for tool-agnostic integrations)
-- 5 complete example cases with inputs and expected outputs
-- Output templates locked (PDF 17-section, Excel 4-sheet, Case Folder 6-part)
-- Workflow templates for 5 common scenarios (copy-paste ready)
+## [1.0.0] - 2026-02-15 — First Public Release
 
-### Changed
-- Locked all output formats — consistent structure across all cases
-- Improved risk scoring precision for edge cases between bands
-- Enhanced Step 0 search coverage to 72+ sources across 6 categories
+First open-source release of the KYC Analyst plugin for Claude Cowork.
 
-### Fixed
-- fpdf2 Unicode bug: replaced checkmarks with `[OK]`/`[X]` for Helvetica compatibility
-- fpdf2 deprecation: migrated from `ln=True` to `new_x="LMARGIN", new_y="NEXT"`
-- Excel `===` serialisation bug with Desktop Commander
+### Features
 
-## [2.2.0] - 2026-02-01
+- **Step 0 Independent Verification** — 6 mandatory search categories (Adverse Media, ICIJ Offshore Leaks, Directorships, PEP, Professional Background, Sanctions) across 90+ sources, executed before any due diligence begins
+- **17 Mandatory Stagegates** — Human-in-the-loop enforcement at every decision point. No auto-approvals, no skipping, no proceeding on silence
+- **Deterministic Risk Scoring** — Four-factor weighted model (Geographic 30%, Customer 35%, Product 25%, Channel 10%) with published formulas. Same inputs always produce the same score
+- **6 Slash Commands** — `/kyc:onboard`, `/kyc:onboard-interactive`, `/kyc:screen`, `/kyc:risk`, `/kyc:monitor`, `/kyc:refresh`
+- **Interactive Onboarding Mode** — Step-by-step dialog guidance for new analysts
+- **Excel Dashboard** — 4-sheet workbook (Executive Summary, Directorships, Discrepancies, Risk Assessment) via openpyxl
+- **PDF Report** — 17-section professional compliance report via fpdf2
+- **Case Folder Management** — Auto-created numbered folder structure (001-006) with immutable audit trail
+- **5 Workflow Templates** — Copy-paste ready for Individual, HNWI, SME, Complex Corporate, and Refresh cases
+- **5 Worked Examples** — Complete input/output examples with expected results
+- **MCP Integration** — Claude in Chrome (browser automation), fpdf2 (PDF), openpyxl (Excel) with tool-agnostic `~~placeholder` connector system
+- **Multi-jurisdiction Support** — UK/EU (AMLD5, MLR 2017, FCA), US (FinCEN, BSA/AML, OFAC), MENA (CBUAE, SAMA)
+- **Connector Flexibility** — Tool-agnostic `~~placeholder` syntax works with Google Drive, Box, Salesforce, Chrome, Slack, and others
 
-### Added
-- Auto case folder creation (numbered 001-006 structure)
-- Immutable audit trail template (AUDIT_TRAIL.md)
-- Case folder structure template locked
+### Data Sources
 
-### Changed
-- PDF report structure finalised at 17 sections
-- Excel dashboard locked at 4 sheets (Summary, Directorships, Discrepancies, Risk)
+All free and public: OFAC SDN, UN Consolidated List, EU Sanctions List, UK HMT, OpenSanctions PEP (100+ countries), Companies House API, ICIJ Offshore Leaks (Panama/Paradise/Pandora Papers), SEC EDGAR.
 
-## [2.1.0] - 2026-01-15
+### Known Limitations
 
-### Added
-- Interactive onboarding mode (`/kyc:onboard-interactive`)
-- Excel 4-sheet dashboard generation via openpyxl
-- Quick Start Guide (10-minute walkthrough)
-
-### Changed
-- Improved document extraction prompting for passports and utility bills
-- Enhanced PEP screening with OpenSanctions 100+ country coverage
-
-## [2.0.0] - 2026-01-01
-
-### Added
-- Step 0 Independent Verification framework (mandatory pre-onboarding)
-- 6 mandatory Step 0 search categories (Adverse Media, ICIJ, Directorships, PEP, Professional, Sanctions)
-- 17 stagegate HITL enforcement model
-- 4-factor deterministic risk scoring (Geographic 30%, Customer 35%, Product 25%, Channel 10%)
-- PDF report generation via fpdf2
-
-### Changed
-- Complete rewrite of onboarding workflow (onboard.md: 1,047 lines)
-- Risk bands standardised: LOW (0-20), MEDIUM (21-60), HIGH (61-80), CRITICAL (81-100)
-
-## [1.0.0] - 2025-11-01
-
-### Added
-- Initial release
-- Basic KYC onboarding workflow
-- Sanctions screening (OFAC, UN, EU, UK)
-- Companies House search
-- Simple risk calculation
-- Basic text-based reporting
+- fpdf2 does not support Unicode characters (checkmarks) with Helvetica font — uses `[OK]`/`[X]` instead
+- fpdf2 requires `new_x="LMARGIN", new_y="NEXT"` syntax (not deprecated `ln=True`)
+- Excel cells containing `===` may serialize incorrectly with Desktop Commander — use alternative separators
+- Claude Cowork and plugins are in research preview — features and behavior may change
+- Only `/kyc:onboard-interactive` has been extensively tested in production pilots. Other commands have been tested in development but not in production compliance environments

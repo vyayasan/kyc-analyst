@@ -298,7 +298,7 @@ Authority: System (Risk Scoring Engine)
 Status: COMPLETE
 
 Details:
-- Risk Scoring Model: Heuristic v2.2.0
+- Risk Scoring Model: Heuristic v1.0.0
 - Geographic Risk Factor: 10/100 (weight 30%)
 - Customer Risk Factor: 15/100 (weight 35%)
 - Product Risk Factor: 15/100 (weight 25%)

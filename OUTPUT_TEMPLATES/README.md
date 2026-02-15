@@ -24,4 +24,4 @@ Locked folder structure specification with:
 
 These templates are automatically applied when generating reports. Do not modify the template structure -- only fill in the data fields.
 
-**Version:** 2.3.0
+**Version:** 1.0.0

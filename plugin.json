@@ -1,6 +1,6 @@
 {
   "name": "kyc-analyst",
-  "version": "2.3.0",
+  "version": "1.0.0",
   "description": "Fully interactive KYC/AML compliance automation with mandatory Step 0 independent verification (AMLD5 Article 10), guided Q&A workflows, automatic case folder creation, Excel dashboards, PDF reports, immutable audit trails, and practical copy-paste workflow templates. All 6 commands (onboard, onboard-interactive, refresh, screen, monitor, risk) with step-by-step guidance and HITL checkpoints.",
   "author": {
     "name": "Vyayasan",
@@ -28,11 +28,7 @@
     "sanctions-screening"
   ],
   "version_history": {
-    "1.0.0": "Initial release with practical workflow templates and HITL workflows",
-    "2.0.0": "Added Step 0 mandatory verification framework",
-    "2.1.0": "Added interactive mode, Excel reports, case folder management",
-    "2.2.0": "Auto case folder creation, locked templates, comprehensive documentation",
-    "2.3.0": "Final locked version: 17 mandatory stagegates, MCP connector integration (Chrome, PDF, Excel), HITL enforcement, fpdf2/openpyxl report generation"
+    "1.0.0": "First public release: 17 mandatory stagegates, Step 0 independent verification, deterministic risk scoring, MCP connector integration, Excel dashboards, PDF reports, 5 workflow templates, 5 worked examples"
   },
   "capabilities": {
     "commands": {

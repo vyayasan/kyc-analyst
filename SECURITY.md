@@ -51,5 +51,4 @@ This plugin:
 
 | Version | Supported |
 |---------|-----------|
-| 2.3.x   | Yes       |
-| < 2.3   | No        |
+| 1.0.x   | Yes       |

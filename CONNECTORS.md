@@ -1,6 +1,6 @@
 # KYC Analyst - Connector Integration Guide
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Purpose:** Tool-agnostic connector integration using MCP (Model Context Protocol)
 
 ---
@@ -251,5 +251,5 @@ All workflow templates in WORKFLOW_TEMPLATES.md already include connector placeh
 
 ---
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Author:** Vyayasan

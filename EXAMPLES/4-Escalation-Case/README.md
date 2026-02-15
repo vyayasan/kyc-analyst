@@ -288,6 +288,6 @@ This example demonstrates a fundamental KYC principle: **Complete information is
 
 **Example Version:** 1.0
 **Version Date:** 11 February 2026
-**Applicable To:** KYC Analyst v2.2.0
+**Applicable To:** KYC Analyst v1.0.0
 **Status:** Ready for Training & Testing
 

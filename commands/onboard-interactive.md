@@ -122,5 +122,5 @@ Each search follows the consent-execute-verify cycle:
 
 ---
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Author:** Vyayasan

@@ -9,7 +9,7 @@ category: compliance
 estimated-duration: 20 minutes
 ---
 
-# Transaction Monitoring Skill - v2.3.0
+# Transaction Monitoring Skill - v1.0.0
 
 AML transaction monitoring for ongoing customer relationships. Identifies suspicious patterns, assesses structuring and layering, and prepares Suspicious Activity Reports (SARs).
 
@@ -96,5 +96,5 @@ Claude drafts SAR narrative including:
 
 ---
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Author:** Vyayasan

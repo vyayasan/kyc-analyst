@@ -9,7 +9,7 @@ category: compliance
 estimated-duration: 10 minutes
 ---
 
-# Risk Assessment Skill - v2.3.0
+# Risk Assessment Skill - v1.0.0
 
 Deterministic heuristic risk scoring using a four-factor weighted model aligned with Basel III, EBA Guidelines, FATF standards, and FinCEN guidance.
 
@@ -112,5 +112,5 @@ Automatic escalation regardless of score:
 
 ---
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Author:** Vyayasan

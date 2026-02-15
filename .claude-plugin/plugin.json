@@ -1,6 +1,6 @@
 {
   "name": "kyc-analyst",
-  "version": "2.3.0",
+  "version": "1.0.0",
   "description": "KYC/AML compliance automation with mandatory Step 0 independent verification, 17 stagegates, deterministic risk scoring, Excel dashboards, PDF reports, and immutable audit trails for UK/EU/MENA/US jurisdictions.",
   "author": {
     "name": "Vyayasan"

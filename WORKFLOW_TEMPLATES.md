@@ -1,6 +1,6 @@
-# KYC Analyst v2.3.0 - Workflow Templates
+# KYC Analyst v1.0.0 - Workflow Templates
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Author:** Vyayasan
 **Purpose:** Ready-to-use workflow prompts for common KYC scenarios
 
@@ -14,7 +14,7 @@
 4. **Paste into Claude** and execute
 5. **Review outputs** and make decisions
 
-All templates include v2.3.0 features:
+All templates include v1.0.0 features:
 - 17 mandatory stagegates with explicit analyst consent
 - Step 0 mandatory verification (5+1 independent searches including ICIJ)
 - 90+ database sources
@@ -732,7 +732,7 @@ Works with: Claude in Chrome
 
 ## Notes
 
-- All templates include **mandatory Step 0 verification** per v2.2.0 requirements
+- All templates include **mandatory Step 0 verification** per v1.0.0 requirements
 - **Heuristic risk scoring** is automatic based on search findings
 - **Decision gate** (PROCEED/ESCALATE) is built into each workflow
 - Outputs follow **locked template formats** for regulatory compliance
@@ -743,6 +743,6 @@ For quick start, see QUICK_START_GUIDE.md
 
 ---
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Author:** Vyayasan
 **GitHub:** https://github.com/vyayasan/kyc-analyst

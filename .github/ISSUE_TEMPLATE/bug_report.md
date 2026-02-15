@@ -27,7 +27,7 @@ What actually happened.
 ## Environment
 - Claude Cowork version:
 - Operating system:
-- Plugin version: 2.3.0
+- Plugin version: 1.0.0
 
 ## Screenshots / Logs
 If applicable, add screenshots. **Never include real customer PII.**

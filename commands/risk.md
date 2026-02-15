@@ -45,5 +45,5 @@ Risk rating assignment requires analyst review and sign-off. Automated scoring i
 
 ---
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Author:** Vyayasan

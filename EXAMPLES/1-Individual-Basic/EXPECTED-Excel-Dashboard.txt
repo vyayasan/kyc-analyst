@@ -272,7 +272,7 @@ Decision Summary:
 | Final Approval | APPROVED | Approved 11/02/2026 by [Analyst Name] |
 
 Regulatory Basis:
-- All 5 mandatory Step 0 searches completed per v2.2.0 requirements
+- All 5 mandatory Step 0 searches completed per v1.0.0 requirements
 - Customer Due Diligence (CDD) requirements met
 - No Enhanced Due Diligence (EDD) required
 - Standard monitoring procedures to apply

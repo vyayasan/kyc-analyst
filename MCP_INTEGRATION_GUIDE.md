@@ -1,9 +1,9 @@
-# MCP Integration Guide - KYC Analyst Plugin v2.3.0
+# MCP Integration Guide - KYC Analyst Plugin v1.0.0
 
 **Comprehensive guide to all free MCP integrations used in this plugin.**
 
 **Author:** Vyayasan
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Last Updated:** February 2026
 
 ---
@@ -735,14 +735,10 @@ This plugin uses tool-agnostic `~~category` placeholders (see `CONNECTORS.md` fo
 
 | Version | Change |
 |---------|--------|
-| 2.3.0 | Unified MCP integration guide documenting all free tools |
-| 2.2.0 | Added write_pdf support, Excel multi-sheet JSON format |
-| 2.1.0 | Added Excel report generation via Desktop Commander |
-| 2.0.0 | Added Claude in Chrome for Step 0 browser automation |
-| 1.0.0 | Initial release with workflow templates |
+| 1.0.0 | First public release — MCP integration guide for Claude in Chrome, fpdf2, openpyxl, Desktop Commander |
 
 ---
 
-**Version:** 2.3.0
+**Version:** 1.0.0
 **Author:** Vyayasan
 **Repository:** https://github.com/vyayasan/kyc-analyst
